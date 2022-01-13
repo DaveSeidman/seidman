@@ -1,6 +1,6 @@
 {
   "name": "seidman",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "the cli portfolio of dave seidman",
   "main": "index.js",
   "repository": "https://gitlab.com/daveseidman/cli-mate",
@@ -14,6 +14,7 @@
     "cligui2": "^2.0.5",
     "colors": "^1.3.3",
     "figlet": "^1.2.3",
+    "node-nlp": "^4.22.9",
     "open": "^8.4.0",
     "prompt": "^1.0.0"
   },

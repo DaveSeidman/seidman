@@ -16,15 +16,13 @@ const disciplines = ['Full Stack Dev', 'XR Design / Dev', 'Game Engine Dev', 'Ro
 const languages = ['JavaScript', 'TypeScript', 'Node', 'Python', 'HTML5 / Canvas', 'WebGL', 'CSS', 'C#', 'SQL', 'PHP', 'Sketch', 'SASS / SCSS'];
 const projects = ['DaveSeidman', 'NFL AR by Verizon', 'ReFurbished', 'Wedding Website', 'CatDive', 'VR Coding', 'The Claw', 'HoloChat', 'Living Distance', 'Pride Parade', 'Cam Repeater', 'Fakebook', 'Stranger Tees'];
 
-// iface.search('lets run a search', disciplines, () => {
-//   iface.log('okays');
-// });
+const openingLine = 'Follow the white rabbit';
 
 // iface.log('Hey there and welcome to my command line portfolio');
 
 
 const work = () => {
-  iface.log('Sure, here\'s my portfolio');
+  iface.log('Sure, have a look at my portfolio');
   open('https://daveseidman.com');
 };
 
@@ -32,19 +30,32 @@ const about = () => {
   iface.log('let me tell you about myself!');
 };
 
+const question = () => {
+  // iface.prompt();
+  iface.stop();
+};
+
 const resume = () => {
   iface.log('okay');
   open('https://daveseidman.com/resume');
+};
+
+const search = () => {
+  iface.search('lets run a search', disciplines, () => {
+    iface.log('okay');
+  });
 };
 
 const quit = () => {
   iface.stop();
 };
 
-iface.list('What woulud you like to do?', {
+iface.list('What would you like to do?', {
   'Show me your work': work,
+  'Ask me a question': question,
   'Tell me about yourself': about,
   'View your resume': resume,
+  'Search your skillset': search,
   Quit: quit,
 });
 // interface.gprompt("this is a guided prompt","type something",options,function(main,output) {

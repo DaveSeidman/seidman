@@ -1,0 +1,12 @@
+{
+  "questions": [
+    "where are you located?",
+    "Where do you live currently?",
+    "What's your address?",
+    "Where are you?"
+  ],
+  "answers": [
+    "I live in Brooklyn",
+    "I'm based in NYC"
+  ]
+}
