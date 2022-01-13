@@ -1,9 +1,9 @@
 {
   "name": "seidman",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "the cli portfolio of dave seidman",
   "main": "index.js",
-  "repository": "https://gitlab.com/daveseidman/cli-mate",
+  "repository": "https://gitlab.com/daveseidman/seidman",
   "scripts": {
     "dev": "nodemon",
     "postinstall": "node index.js"
