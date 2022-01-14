@@ -1,22 +1,21 @@
 {
   "name": "seidman",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "the cli portfolio of dave seidman",
   "main": "index.js",
   "repository": "https://gitlab.com/daveseidman/seidman",
   "scripts": {
     "dev": "nodemon",
+    "start": "node index.js",
     "postinstall": "node index.js"
   },
   "author": "dave seidman",
   "license": "ISC",
   "dependencies": {
-    "cligui2": "^2.0.5",
     "colors": "^1.3.3",
-    "figlet": "^1.2.3",
+    "inquirer": "^8.2.0",
     "node-nlp": "^4.22.9",
-    "open": "^8.4.0",
-    "prompt": "^1.0.0"
+    "open": "^8.4.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1",

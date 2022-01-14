@@ -1,0 +1,76 @@
+{
+  "projects": [
+    {
+      "name": "HoloChat",
+      "desc": "Realtime Holographic Chat Application",
+      "type": ["HOL", "FED", "BED", "EXP"],
+      "value": "HoloChat"
+    },
+    {
+      "name": "Living Distance",
+      "desc": "Self-propelled Robot Sent to Space",
+      "type": ["CV", "PC"],
+      "value": "LivingDistance"
+    },
+    {
+      "name": "Pride Parade",
+      "desc": "Join the virtual Pride Parade!",
+      "type": ["FED", "CV"],
+      "value": "Pride-Parade"
+    },
+    {
+      "name": "Cam Repeater",
+      "desc": "Digital Periscopes",
+      "type": ["CV", "EXP"],
+      "value": "Cam-Repeater"
+    },
+    {
+      "name": "Fakebook",
+      "desc": "Simulated Chat Application",
+      "type": ["APP"],
+      "value": "Fakebook"
+    },
+    {
+      "name": "Stranger Tees",
+      "desc": "Interactive Tee Shirt",
+      "type": ["EXP", "PC", "BED"],
+      "value": "StrangerTees"
+    },
+    {
+      "name": "NFL AR by Verizon",
+      "desc": "NFL AR Experience by Verizon",
+      "type": ["AR","CV", "LIV"],
+      "value": "NFL-AR"
+    },
+    {
+      "name": "ReFurbished",
+      "desc": "Remote Controlled Furby",
+      "type": ["PC"],
+      "value": "Furby"
+    },
+    {
+      "name": "Wedding Website",
+      "desc": "DeepZoom Viewer Integration",
+      "type": ["FED"],
+      "value": "Wedding"
+    },
+    {
+      "name": "CatDive",
+      "desc": "It's cats all the way down.",
+      "type": ["FED", "CV"],
+      "value": "CatDive"
+    },
+    {
+      "name": "VR Coding",
+      "desc": "Immersive Realtime Coding Environemnt",
+      "type": ["AR", "VR", "EXP"],
+      "value": "VR-Coding"
+    },
+    {
+      "name": "The Claw",
+      "desc": "Internet controllable Arcade Claw Machine",
+      "type": ["PC", "LIV", "FED", "BED"],
+      "value": "The-Claw"
+    }
+  ]
+}
