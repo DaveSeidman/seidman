@@ -12,6 +12,7 @@
   "author": "dave seidman",
   "license": "ISC",
   "dependencies": {
+    "auto-bind": "^5.0.1",
     "colors": "^1.3.3",
     "inquirer": "^8.2.0",
     "node-nlp": "^4.22.9",
