@@ -14,7 +14,7 @@
     },
     {
       "name": "Pride Parade",
-      "desc": "Join the virtual Pride Parade!",
+      "desc": "Interactive Face Tracking App",
       "type": ["FED", "CV"],
       "value": "Pride-Parade"
     },

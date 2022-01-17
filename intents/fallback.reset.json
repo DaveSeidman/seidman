@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "Cancel",
+    "Quit",
+    "exit",
+    "stop please",
+    "restart",
+    "reset",
+    "start over",
+    "restart",
+    "can we start again?",
+    "go back to the beginning"
+  ],
+  "answers": [
+    "okay, resetting"
+  ]
+}
