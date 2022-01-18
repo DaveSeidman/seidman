@@ -5,6 +5,7 @@ const { NlpManager, ConversationContext } = require('node-nlp');
 // const blessed = require('blessed');
 const { terminal } = require('terminal-kit');
 const { projects } = require('./projects.json');
+const { typeSentence, eraseSentence } = require('./modules/typewriter');
 
 class App {
   constructor() {
@@ -20,32 +21,14 @@ class App {
     // this.startChat();
   }
 
-  type(string, options) {
-    const defaults = {
-      speed: 100,
-      variation: 0,
-    };
-    options = Object.assign(defaults, options);
-    console.log(options);
-    return new Promise((resolve) => {
-      for (let i = 0; i < string.length; i += 1) {
-        setTimeout(() => {
-          process.stdout.write(string.charAt(i));
-        }, (i * options.speed) + Math.random() * options.variation);
-      }
-
-      setTimeout(() => resolve(), string.length * options.speed);
+  welcome2() {
+    const sentence = 'Follow the white rabbit...';
+    typeSentence(sentence, { speed: 25, variation: 100 }).then(() => {
+      // this.eraseSentence();
+      eraseSentence(sentence);
     });
   }
 
-  welcome2() {
-    // terminal('hello world');
-    // console.clear();
-    // process.stdin.on('data', (data) => {
-    //   console.log(`hey ${data.toString()}`);
-    // });
-    this.type('hello world', { speed: 70, variation: 300 });
-  }
 
   welcome() {
     return new Promise((resolve) => {
