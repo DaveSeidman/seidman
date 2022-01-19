@@ -10,7 +10,6 @@ const fontDefault = '\x1b[0m';
 const fontBot = '\x1b[36m';
 const fallbackCountThreshold = 3;
 
-
 class App {
   constructor() {
     this.continueChat = this.continueChat.bind(this);
@@ -51,8 +50,8 @@ class App {
 
     fs.readdir(path.join(__dirname, 'modules/nlp/intents'), (err, files) => {
       this.projectList = files.filter(file => file.split('.')[0] === 'projects').map(file => file.split('.')[1].replace('-', ' '));
-      this.intro();
-      // this.startChat();
+      // this.intro();
+      this.start();
     });
   }
 
@@ -76,8 +75,7 @@ class App {
   startChat() {
     const startSentence = 'Ask me anything and I\'ll do my best to answer: ';
     this.typewriter.typeSentence(startSentence).then(() => {
-      process.stdout.clearLine();
-      process.stdout.cursorTo(0);
+      this.clear();
 
       this.rl.question(startSentence, (answer) => {
         this.manager.process('en', answer, this.context).then(this.continueChat);
@@ -111,8 +109,7 @@ class App {
 
     process.stdout.write(fontBot);
     this.typewriter.typeSentence(message).then(() => {
-      process.stdout.clearLine();
-      process.stdout.cursorTo(0);
+      this.clear();
       this.rl.question(message, (answer) => {
         this.manager.process('en', answer, this.context).then(this.continueChat);
       });
@@ -169,8 +166,7 @@ class App {
   showProjectTypes() {
     const message = `What kinds of projects would you like to see? ${this.projectList.join(', ')}: `;
     this.typewriter.typeSentence(message).then(() => {
-      process.stdout.clearLine();
-      process.stdout.cursorTo(0);
+      this.clear();
       this.rl.question(message, (answer) => {
         this.manager.process('en', answer, this.context).then((res) => {
           if (res.intent.split('.')[0] === 'projects') {
@@ -206,6 +202,15 @@ class App {
   contact() {
     // console.log('contact me');
     this.typewriter.typeSentence('You can email me at daveseidman@gmail.com').then(this.continueChat);
+  }
+
+  clear() {
+    if (process.stdout.clearLine) {
+      process.stdout.clearLine();
+      process.stdout.cursorTo(0);
+    } else {
+      this.rl.clearLine();
+    }
   }
 }
 
