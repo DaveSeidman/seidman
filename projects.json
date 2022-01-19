@@ -3,73 +3,73 @@
     {
       "name": "HoloChat",
       "desc": "Realtime Holographic Chat Application",
-      "type": ["HOL", "FED", "BED", "EXP"],
+      "type": ["holograms", "frontend", "backend", "experiment"],
       "value": "HoloChat"
     },
     {
       "name": "Living Distance",
       "desc": "Self-propelled Robot Sent to Space",
-      "type": ["CV", "PC"],
+      "type": ["computer-vision", "physical-computing"],
       "value": "LivingDistance"
     },
     {
       "name": "Pride Parade",
       "desc": "Interactive Face Tracking App",
-      "type": ["FED", "CV"],
+      "type": ["frontend", "computer-vision"],
       "value": "Pride-Parade"
     },
     {
       "name": "Cam Repeater",
       "desc": "Digital Periscopes",
-      "type": ["CV", "EXP"],
+      "type": ["computer-vision", "experiment"],
       "value": "Cam-Repeater"
     },
     {
       "name": "Fakebook",
       "desc": "Simulated Chat Application",
-      "type": ["APP"],
+      "type": ["apps"],
       "value": "Fakebook"
     },
     {
       "name": "Stranger Tees",
       "desc": "Interactive Tee Shirt",
-      "type": ["EXP", "PC", "BED"],
+      "type": ["experiment", "physical-computing", "backend"],
       "value": "StrangerTees"
     },
     {
       "name": "NFL AR by Verizon",
       "desc": "NFL AR Experience by Verizon",
-      "type": ["AR","CV", "LIV"],
+      "type": ["augmented-reality","computer-vision", "live-events"],
       "value": "NFL-AR"
     },
     {
       "name": "ReFurbished",
       "desc": "Remote Controlled Furby",
-      "type": ["PC"],
+      "type": ["physical-computing"],
       "value": "Furby"
     },
     {
       "name": "Wedding Website",
       "desc": "DeepZoom Viewer Integration",
-      "type": ["FED"],
+      "type": ["frontend"],
       "value": "Wedding"
     },
     {
       "name": "CatDive",
       "desc": "It's cats all the way down.",
-      "type": ["FED", "CV"],
+      "type": ["frontend", "computer-vision"],
       "value": "CatDive"
     },
     {
       "name": "VR Coding",
       "desc": "Immersive Realtime Coding Environemnt",
-      "type": ["AR", "VR", "EXP"],
+      "type": ["augmented-reality", "virtual-reality", "experiment"],
       "value": "VR-Coding"
     },
     {
       "name": "The Claw",
       "desc": "Internet controllable Arcade Claw Machine",
-      "type": ["PC", "LIV", "FED", "BED"],
+      "type": ["physical-computing", "live-events", "frontend", "backend"],
       "value": "The-Claw"
     }
   ]

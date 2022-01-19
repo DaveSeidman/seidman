@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "what coding languages do you know?",
+    "What do you code in?",
+    "Which languages do you write with?",
+    "Do you code in JavaScript?",
+    "Which languages do you use?",
+    "Are you a python developer?",
+    "Can you code in C++?",
+    "What's your favorite coding language?",
+    "which programming language do you work with?"
+  ],
+  "answers": [
+    "I mostly write in JavaScript.",
+    "I'm write JavaScript, Python, C# and a few other languages.",
+    "I use a lot of languages but mostly JavaScript and WebGL.",
+    "Whatever language fits the project but typically JavaScript and NodeJS."
+  ]
+}

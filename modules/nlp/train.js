@@ -12,8 +12,10 @@ for (const file of files) {
   for (const question of data.questions) {
     manager.addDocument('en', question, intent);
   }
-  for (const answer of data.answers) {
-    manager.addAnswer('en', intent, answer);
+  if (data.answers) {
+    for (const answer of data.answers) {
+      manager.addAnswer('en', intent, answer);
+    }
   }
 }
 

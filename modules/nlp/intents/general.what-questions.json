@@ -1,0 +1,15 @@
+{
+  "questions": [
+    "what kinds of questions can I ask you?",
+    "I'm not sure what to say?",
+    "What do I do now?",
+    "what can I ask about?",
+    "what can you talk about?"
+  ],
+  "answers": [
+    "You can ask me things like 'What do you work on?', 'who do you work for?'",
+    "I can answer most questions about Dave Seidman.",
+    "I know a lot about Dave since he codede me.",
+    "Ask me about my work or personal life"
+  ]
+}

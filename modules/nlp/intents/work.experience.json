@@ -5,9 +5,12 @@
     "What is your work experience?",
     "Who have you worked for?",
     "Which agencies have you worked at?",
-    "tell me your work experience"
+    "tell me your work experience",
+    "how long have you been a developer?"
   ],
   "answers": [
-    "I've worked with over a dozen NYC digital agencies"
+    "I've worked with over a dozen NYC digital agencies.",
+    "I've been doing this for over 20 years.",
+    "I'm very experienced in Digital Development."
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "questions": [
+    "where did you go to shcool?",
+    "tell me about your education?",
+    "Where did you learn to code?",
+    "What's your education background?",
+    "What college did you go to?",
+    "Which school did you attend?",
+    "What university did you graduate from?",
+    "Do you have a degree?",
+    "Do you have your bachelors?"
+  ],
+  "answers": [
+    "I got my degree in Comp Sci from Drew University",
+    "I have my bachelors in Computer Science from Drew U",
+    "I went to Drew University"
+  ]
+}

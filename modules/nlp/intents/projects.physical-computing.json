@@ -2,7 +2,7 @@
   "questions": [
     "Physical Computing",
     "Arduino",
-    "Raspberry Pi"
-  ],
-  "answers": ["PC"]
+    "Raspberry Pi",
+    "Teensy"
+  ]
 }

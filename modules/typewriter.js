@@ -1,17 +1,16 @@
-// let _string;
-// let _index;
-// let _speed;
-// let _variation;
-
-const defaultTypeSpeed = 60;
-const defaultTypeVariation = 100;
-const defaultEraseSpeed = 40;
-const defaultEraseVariation = 20;
-const defaultBlinkDuration = 2000;
+const defaultTypeSpeed = 5;// 60;
+const defaultTypeVariation = 0;// 100;
+// const defaultEraseSpeed = 40;
+// const defaultEraseVariation = 20;
+// const defaultBlinkDuration = 2000;
 
 class Typewriter {
   constructor(state) {
     this.state = state;
+
+    this.typeSentence = this.typeSentence.bind(this);
+    this.typeCharacter = this.typeCharacter.bind(this);
+    this.skipTyping = this.skipTyping.bind(this);
   }
 
   typeSentence(string, options) {
@@ -34,9 +33,11 @@ class Typewriter {
 
   typeCharacter() {
     return new Promise((resolve) => {
-      process.stdout.write(this.string.charAt(this.index));
+      const char = this.string.charAt(this.index);
+      process.stdout.write(char);
+      // process.stdout.write(`\x1b[34m${char}\x1b[89m`);
       const delay = this.speed + ((this.variation * Math.random()) - (this.variation / 2));
-      setTimeout(() => {
+      this.charTimeout = setTimeout(() => {
         this.index += 1;
         if (this.index < this.string.length) this.typeCharacter().then(resolve);
         else return resolve();
@@ -45,88 +46,14 @@ class Typewriter {
   }
 
   skipTyping() {
+    // this.charComplete.resolve();
+    // this.sentenceComplete.resolve();
+    clearTimeout(this.charTimeout);
+
     console.log('skipping to end');
     this.index = this.string.length - 1;
+    console.log(this.sentenceComplete);
   }
 }
 
 module.exports.Typewriter = Typewriter;
-
-/*
-const typeCharacter = () => new Promise((resolve) => {
-  process.stdout.write(_string.charAt(_index));
-  setTimeout(() => {
-    _index += 1;
-    if (_index < _string.length) typeCharacter().then(resolve);
-    else return resolve();
-  }, _speed + ((_variation * Math.random()) - (_variation / 2)));
-});
-
-const typeSentence = (string, options, state) => {
-  const defaults = {
-    speed: defaultTypeSpeed,
-    variation: defaultTypeVariation,
-  };
-  options = Object.assign(defaults, options);
-  _string = string;
-  _index = 0;
-  _speed = options.speed;
-  _variation = options.variation;
-
-  // state.typing = true;
-  return new Promise((resolve) => {
-    typeCharacter().then(resolve);
-    // state.typing = false;
-  });
-};
-
-const eraseCharacter = () => new Promise((resolve) => {
-  process.stdout.write(_string.charAt(_index));
-  setTimeout(() => {
-    process.stdout.clearLine();
-    process.stdout.cursorTo(0);
-    process.stdout.write(_string.substr(0, _index));
-    _index -= 1;
-    if (_index >= 0) eraseCharacter().then(resolve);
-    else return resolve();
-  }, _speed + ((_variation * Math.random()) - (_variation / 2)));
-});
-
-const eraseSentence = (string, options) => {
-  const defaults = {
-    speed: defaultEraseSpeed,
-    variation: defaultEraseVariation,
-  };
-  options = Object.assign(defaults, options);
-
-  _string = string;
-  _index = string.length - 1;
-  _speed = options.speed;
-  _variation = options.variation;
-
-  return new Promise((resolve) => {
-    eraseCharacter().then(resolve);
-  });
-};
-
-const eraseAmount = amount => new Promise((resolve) => {
-  process.stdout.cursorTo(-amount);
-  process.stdout.write('test');
-  return resolve();
-});
-
-// const blinkCursor = duration => new Promise((resolve) => {
-//   const _duration = duration || defaultBlinkDuration;
-//   const blinkOn = setInterval(() => {
-//     process.stdout.write('|');
-//   }, 1000);
-//   const blinkOff = setInterval(() => {
-//     process.stdout.cursorTo;
-//   });
-//
-//   setTimeout(() => resolve(), _duration);
-// });
-
-
-module.exports = { typeSentence, eraseSentence, eraseAmount };
-*/

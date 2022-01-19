@@ -2,9 +2,12 @@
   "questions": [
     "who are you?",
     "What is this?",
-    "What's your name?"
+    "What's your name?",
+    "Who am I talking to?"
   ],
   "answers": [
-    "I'm dave! What else would you like to know?"
+    "I'm Dave!",
+    "My name is Dave Seidman",
+    "This is Dave"
   ]
 }
