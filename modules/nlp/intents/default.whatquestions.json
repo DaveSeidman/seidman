@@ -1,0 +1,11 @@
+{
+  "questions": [
+    "what kind of questions can I ask you?",
+    "I'm not sure what to say?",
+    "What do I do now?",
+    "what can I ask about?"
+  ],
+  "answers": [
+    "You can ask me things like 'What do you work on?', 'who do you work for?'"
+  ]
+}

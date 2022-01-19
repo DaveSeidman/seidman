@@ -1,13 +1,13 @@
 {
   "name": "seidman",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "description": "the cli portfolio of dave seidman",
   "main": "index.js",
   "repository": "https://gitlab.com/daveseidman/seidman",
   "scripts": {
-    "dev": "nodemon",
     "start": "node index.js",
-    "postinstall": "node index.js"
+    "postinstall": "node index.js",
+    "train": "cd modules/nlp && node train"
   },
   "author": "dave seidman",
   "license": "ISC",

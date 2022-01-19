@@ -1,0 +1,10 @@
+{
+  "questions": [
+    "i'm %name%",
+    "my name is %name%",
+    "nice to meet you, i'm %name%"
+  ],
+  "answers": [
+    "nice to meet you %name%"
+  ]
+}

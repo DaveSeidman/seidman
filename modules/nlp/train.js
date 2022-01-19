@@ -4,6 +4,7 @@ const manager = new NlpManager({ languages: ['en'] });
 const fs = require('fs');
 
 const files = fs.readdirSync('./intents');
+
 for (const file of files) {
   let data = fs.readFileSync(`./intents/${file}`);
   data = JSON.parse(data);
@@ -15,8 +16,10 @@ for (const file of files) {
     manager.addAnswer('en', intent, answer);
   }
 }
+
 async function train_save() {
   await manager.train();
   manager.save();
 }
+
 train_save();
