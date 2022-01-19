@@ -51,8 +51,8 @@ class App {
 
     fs.readdir(path.join(__dirname, 'modules/nlp/intents'), (err, files) => {
       this.projectList = files.filter(file => file.split('.')[0] === 'projects').map(file => file.split('.')[1].replace('-', ' '));
-      // this.start();
-      this.startChat();
+      this.intro();
+      // this.startChat();
     });
   }
 

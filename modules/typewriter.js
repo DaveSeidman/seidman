@@ -1,5 +1,5 @@
-const defaultTypeSpeed = 5;// 60;
-const defaultTypeVariation = 0;// 100;
+const defaultTypeSpeed = 60;
+const defaultTypeVariation = 100;
 // const defaultEraseSpeed = 40;
 // const defaultEraseVariation = 20;
 // const defaultBlinkDuration = 2000;
