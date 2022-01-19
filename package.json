@@ -1,6 +1,6 @@
 {
   "name": "seidman",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "the cli portfolio of dave seidman",
   "main": "index.js",
   "repository": "https://gitlab.com/daveseidman/seidman",

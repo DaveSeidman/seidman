@@ -44,10 +44,10 @@ class App {
     this.typewriter = new Typewriter(this.state);
 
 
-    process.stdin.on('keypress', (char, key) => {
-      // TODO: on enter pressed, skip typing
-      // if (key.name === 'return' && this.typewriter.typing) this.typewriter.skipTyping();
-    });
+    // process.stdin.on('keypress', (char, key) => {
+    // TODO: on enter pressed, skip typing
+    // if (key.name === 'return' && this.typewriter.typing) this.typewriter.skipTyping();
+    // });
 
     fs.readdir(path.join(__dirname, 'modules/nlp/intents'), (err, files) => {
       this.projectList = files.filter(file => file.split('.')[0] === 'projects').map(file => file.split('.')[1].replace('-', ' '));
@@ -209,7 +209,7 @@ class App {
   }
 }
 
-const app = new App();
+const app = new App(); // eslint-disable-line
 
 process.on('SIGINT', () => {
   console.log('Caught interrupt signal');
