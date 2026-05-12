@@ -5,11 +5,19 @@
     "What's good?",
     "how have you been?",
     "How do you feel?",
-    "how are things?"
+    "how are things?",
+    "you good?",
+    "are you ok?",
+    "are you okay?",
+    "how are you doing?",
+    "how is your day?",
+    "having a good day?",
+    "are you alive?"
   ],
   "answers": [
-    "The bot is doing well, thanks for asking.",
-    "This bot is doing fine, thanks.",
-    "Pretty good, for a command-line package."
+    "Pretty good, for a command-line package. Ask me about Dave.",
+    "This bot is doing fine. It is mostly here to talk about Dave, though.",
+    "Operational and lightly conversational. What do you want to know about Dave?",
+    "Good enough to answer questions about Dave."
   ]
 }

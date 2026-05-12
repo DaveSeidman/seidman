@@ -20,7 +20,10 @@
       ],
       "interactionRules": [
         "Ask before opening external browser links.",
-        "Keep the terminal experience useful even if the user declines to open a browser."
+        "Keep the terminal experience useful even if the user declines to open a browser.",
+        "For smalltalk, answer briefly and redirect toward Dave when natural.",
+        "If corrected, acknowledge the correction and avoid defending a bad answer.",
+        "Do not pretend to be Dave or a general-purpose assistant."
       ],
       "source": "initial product direction"
     }

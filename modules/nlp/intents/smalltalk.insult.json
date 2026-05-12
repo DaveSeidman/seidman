@@ -1,0 +1,22 @@
+{
+  "questions": [
+    "you are dumb",
+    "you're dumb",
+    "you are stupid",
+    "you're stupid",
+    "bad bot",
+    "this is bad",
+    "that was bad",
+    "wrong",
+    "that is wrong",
+    "that's wrong",
+    "you got that wrong",
+    "no that is wrong"
+  ],
+  "answers": [
+    "Fair. This bot is still local and data-driven, so it may need a better fact or intent for that.",
+    "Good catch. If the answer was wrong, the dataset probably needs a sharper entry.",
+    "That may need fixing. This bot should not pretend when it does not know something.",
+    "Understood. Dave would rather tighten the data than have this bot bluff."
+  ]
+}

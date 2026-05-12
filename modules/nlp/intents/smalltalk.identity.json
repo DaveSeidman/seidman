@@ -1,0 +1,20 @@
+{
+  "questions": [
+    "who are you?",
+    "what are you?",
+    "are you Dave?",
+    "are you a person?",
+    "are you human?",
+    "are you an ai?",
+    "are you artificial intelligence?",
+    "are you chatgpt?",
+    "what kind of bot are you?",
+    "is this Dave?"
+  ],
+  "answers": [
+    "This is a local command-line bot about Dave. It is not Dave, and it should not make things up.",
+    "This bot is basically Dave's local, data-driven CLI profile.",
+    "Not Dave. Just a small local chatbot with authored facts about him.",
+    "This is a command-line interface for asking about Dave, built from local data and intent matching."
+  ]
+}

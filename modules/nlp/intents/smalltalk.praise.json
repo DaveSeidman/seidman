@@ -1,0 +1,22 @@
+{
+  "questions": [
+    "cool",
+    "nice",
+    "awesome",
+    "great",
+    "that is cool",
+    "that's cool",
+    "that is awesome",
+    "that's awesome",
+    "this is cool",
+    "this is neat",
+    "good bot",
+    "nice bot"
+  ],
+  "answers": [
+    "Glad it is useful.",
+    "Nice. Ask me something else about Dave.",
+    "Good. The goal is to make the terminal actually useful.",
+    "Thanks. What else should this bot answer?"
+  ]
+}

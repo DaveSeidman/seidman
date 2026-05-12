@@ -5,11 +5,22 @@
     "What do I do now?",
     "what can I ask about?",
     "what can you talk about?",
-    "what can we talk about?"
+    "what can we talk about?",
+    "help",
+    "what can you do?",
+    "what do you know?",
+    "what are you for?",
+    "how does this work?",
+    "what should I ask?",
+    "give me examples",
+    "give me some examples",
+    "what can I type?",
+    "what should we talk about?"
   ],
   "answers": [
     "Whatever you'd like? This bot has a lot of details about Dave.",
-    "You can ask about Dave's work, projects, background, personality, or weird little details.",
-    "Most things about Dave are fair game: work, projects, tools, personal background, or what he likes."
+    "You can ask about Dave's work, projects, background, personality, family, tools, or weird little details.",
+    "Try asking about Dave's current role, favorite projects, work style, strengths, or what he does outside work.",
+    "This bot works from local authored data about Dave, so it is best at questions about his work, projects, background, and personality."
   ]
 }
