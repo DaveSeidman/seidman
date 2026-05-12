@@ -1,0 +1,15 @@
+{
+  "questions": [
+    "what was his first programming language?",
+    "what was Dave's first programming language?",
+    "what language did Dave learn first?",
+    "what language did he learn first?",
+    "did Dave learn BASIC?",
+    "did he learn BASIC?"
+  ],
+  "answers": [
+    "Dave's first programming language was BASIC on a TI-89 calculator.",
+    "Dave first learned programming with BASIC on a TI-89 calculator.",
+    "The first programming language named in this dataset is BASIC, which Dave used on a TI-89 calculator."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "questions": [
+    "are you a resume?",
+    "is this a resume?",
+    "are you a portfolio?",
+    "is this a portfolio?",
+    "is this Dave's resume?",
+    "is this Dave's portfolio?"
+  ],
+  "answers": [
+    "Sort of. This is a command-line portfolio bot, built as an npm package instead of a normal resume.",
+    "It is closer to an interactive command-line portfolio than a traditional resume.",
+    "This bot is meant to sit somewhere between a portfolio, a resume, and a small local chatbot about Dave."
+  ]
+}

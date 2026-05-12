@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "does Dave like museums?",
+    "does he like museums?",
+    "does Dave like art?",
+    "does he like art?",
+    "is Dave into museums?",
+    "is he into museums?",
+    "is Dave artistic?",
+    "is he artistic?",
+    "does Dave have an art background?",
+    "does he have an art background?"
+  ],
+  "answers": [
+    "Dave has a real arts-and-museums thread: he minored in Art, his mother was a museum curator, and he now works on museum installation design.",
+    "Yes, art and museums are part of the picture. Dave minored in Art and currently builds interactive museum experiences at Local Projects.",
+    "Dave is not only technical. He has an Art minor, grew up with a museum-curator influence, and now works on museum installations."
+  ]
+}

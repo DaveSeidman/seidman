@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "fuck you",
+    "you suck",
+    "this sucks",
+    "shut up",
+    "go away",
+    "i hate this",
+    "i hate you"
+  ],
+  "answers": [
+    "Fair enough. This bot is here if you want to ask something useful about Dave.",
+    "Understood. Ask a direct question about Dave if you want to keep going.",
+    "This bot can take the note. It is more useful with questions about Dave, though."
+  ]
+}

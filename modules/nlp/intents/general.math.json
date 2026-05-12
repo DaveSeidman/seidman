@@ -7,7 +7,12 @@
     "what is 2 + 2?",
     "what's 2 plus 2?",
     "can you do math?",
-    "can you answer math questions?"
+    "can you answer math questions?",
+    "what is 2+2?",
+    "what's 2+2?",
+    "2+2",
+    "what does 2+2 equal?",
+    "what does two plus two equal?"
   ],
   "answers": [
     "Two plus two is four. This bot can handle a few simple questions, but its real job is talking about Dave.",

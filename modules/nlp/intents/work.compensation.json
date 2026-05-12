@@ -1,0 +1,23 @@
+{
+  "questions": [
+    "what is Dave's salary expectation?",
+    "what are Dave's salary expectations?",
+    "what is his salary expectation?",
+    "what are his salary expectations?",
+    "what salary does Dave want?",
+    "what salary does he want?",
+    "how much does Dave charge?",
+    "how much does he charge?",
+    "what is Dave's rate?",
+    "what is his rate?",
+    "what does Dave cost?",
+    "what does he cost?",
+    "is Dave expensive?",
+    "is he expensive?"
+  ],
+  "answers": [
+    "This bot does not have Dave's compensation details, and it should not make them up.",
+    "There is no salary or rate information in the dataset. For that, Dave should answer directly.",
+    "Compensation is not in this local data. The honest answer is: ask Dave directly."
+  ]
+}

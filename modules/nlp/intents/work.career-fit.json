@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "what does Dave want in his next job?",
+    "what does he want in his next job?",
+    "what kind of job does Dave want?",
+    "what kind of job does he want?",
+    "what is Dave looking for next?",
+    "what is he looking for next?",
+    "what kind of company should hire Dave?",
+    "what kind of team should hire Dave?",
+    "where would Dave fit best?",
+    "where would he fit best?",
+    "what environment is Dave best in?",
+    "what environment is he best in?"
+  ],
+  "answers": [
+    "Based on the current dataset, Dave fits best where he can move fast on hard, unusual interactive work, especially on small teams or solo.",
+    "Dave seems best suited to projects that feel impossible or magical at first glance, where rapid prototyping and real execution both matter.",
+    "The dataset points toward small teams, inventive work, and projects that need someone who can find a path quickly and then actually build it."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "can Dave manage people?",
+    "can he manage people?",
+    "is Dave a manager?",
+    "is he a manager?",
+    "does Dave lead teams?",
+    "does he lead teams?",
+    "has Dave been a lead engineer?",
+    "has he been a lead engineer?",
+    "can Dave lead a project?",
+    "can he lead a project?"
+  ],
+  "answers": [
+    "The dataset does not frame Dave as a people manager, but it does say he has been a lead engineer and works well solo or on small teams.",
+    "Dave has lead-engineer experience, including partnering with a VXD team on a complex installation. This dataset does not claim he is a people manager.",
+    "Dave seems strongest as a senior individual contributor or lead engineer: dependable, fast, inventive, and good on small teams or solo."
+  ]
+}

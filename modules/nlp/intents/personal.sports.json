@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "does Dave like sports?",
+    "does he like sports?",
+    "what sports does Dave like?",
+    "what sports does he like?",
+    "does Dave play volleyball?",
+    "does he play volleyball?",
+    "does Dave like beach volleyball?",
+    "does he like beach volleyball?"
+  ],
+  "answers": [
+    "The sport called out in the dataset is beach volleyball. Dave loves being on the beach and likes beach volleyball.",
+    "Dave likes beach volleyball and loves being on the beach."
+  ]
+}

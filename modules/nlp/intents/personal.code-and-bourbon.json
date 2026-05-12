@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "what is Code and Bourbon?",
+    "what is code and bourbon?",
+    "tell me about Code and Bourbon",
+    "tell me about code and bourbon",
+    "does Dave run a meetup?",
+    "does he run a meetup?",
+    "what meetup does Dave run?",
+    "what meetup does he run?"
+  ],
+  "answers": [
+    "Code and Bourbon is Dave's semi-monthly coding meetup. The site is codeandbourbon.com.",
+    "Dave runs a semi-monthly coding meetup called Code and Bourbon: codeandbourbon.com.",
+    "Code and Bourbon is exactly what it sounds like: a recurring coding meetup Dave hosts, with bourbon in the mix."
+  ]
+}

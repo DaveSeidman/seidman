@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "does Dave know React?",
+    "does he know React?",
+    "does Dave use React?",
+    "does he use React?",
+    "what frameworks does Dave use?",
+    "what frameworks does he use?",
+    "what libraries does Dave use?",
+    "what libraries does he use?",
+    "does Dave know Three.js?",
+    "does he know Three.js?",
+    "does Dave use WebGL?",
+    "does he use WebGL?"
+  ],
+  "answers": [
+    "The strongest named tools in this dataset are JavaScript, WebGL, Node.js, Three.js, and Rapier. It does not currently include a specific React claim.",
+    "Dave is especially strong in JavaScript and WebGL. The dataset also names Node.js, Three.js, and Rapier; it does not say enough about React yet.",
+    "For frameworks and libraries, this dataset points most clearly to Three.js, Rapier, Node.js, and WebGL-adjacent work. React is not documented here yet."
+  ]
+}

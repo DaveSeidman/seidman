@@ -1,0 +1,23 @@
+{
+  "questions": [
+    "tell me about the plinko thing",
+    "what was the plinko thing?",
+    "tell me about the plinko project",
+    "what was the plinko project?",
+    "what was the museum game?",
+    "tell me about the museum game",
+    "tell me about the physics project",
+    "what was the physics project?",
+    "what did Dave build with Rapier?",
+    "what did he build with Rapier?",
+    "what did Dave build with Three.js and Rapier?",
+    "what did he build with Three.js and Rapier?",
+    "what is a project you cannot google?",
+    "what project could not be googled?"
+  ],
+  "answers": [
+    "One good example is a Plinko-style museum installation Dave built with Three.js and Rapier. The user only saw one ball drop, but behind the scenes the simulation may have run thousands of times to find a physically valid path that matched their dial settings and launch timing.",
+    "Dave led a non-deterministic Plinko-style museum installation with the VXD team. It used Three.js and Rapier, physical dials, a sweeping launcher, and fast-forwarded physics simulations to find a valid ball path before showing the visitor one clean drop.",
+    "The Plinko project is a strong Dave story: real physics, physical controls, a big portrait display, and a simulation that could run thousands of invisible attempts so the one visible drop satisfied the right bucket and collision sequence."
+  ]
+}

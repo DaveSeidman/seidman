@@ -1,0 +1,18 @@
+{
+  "questions": [
+    "what does Dave's wife do?",
+    "what does his wife do?",
+    "what does Dave's spouse do?",
+    "what does his spouse do?",
+    "how old are Dave's kids?",
+    "how old are his kids?",
+    "what are Dave's kids names?",
+    "what are his kids names?",
+    "what are Dave's children named?",
+    "what are his children named?"
+  ],
+  "answers": [
+    "The dataset says Dave is married and has three kids, but it does not include details about his wife or kids. That is probably the right boundary for this bot.",
+    "This bot knows Dave is married and has three kids, but it does not include names, ages, or details about them."
+  ]
+}

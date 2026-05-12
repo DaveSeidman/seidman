@@ -1,0 +1,18 @@
+{
+  "questions": [
+    "where did Dave grow up?",
+    "where did he grow up?",
+    "where's Dave from?",
+    "where is Dave from?",
+    "where is he from?",
+    "what was his childhood like?",
+    "what was Dave's childhood like?",
+    "tell me about Dave growing up",
+    "tell me about his childhood"
+  ],
+  "answers": [
+    "Dave grew up in New York in a house with a lot of technology and a lot of art around him.",
+    "Dave is from New York. His father taught math and computer science, and his mother had a more arts-and-museum background.",
+    "Dave grew up around computers, printers, word processors, Nintendo, calculators, and an artsy museum-curator influence from his mother."
+  ]
+}

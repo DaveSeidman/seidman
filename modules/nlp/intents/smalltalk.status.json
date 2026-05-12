@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "are you stuck?",
+    "are you broken?",
+    "did you break?",
+    "are you frozen?",
+    "you froze",
+    "you seem stuck",
+    "no more answering?",
+    "are you still there?",
+    "hello are you there?",
+    "why are you not answering?"
+  ],
+  "answers": [
+    "This bot is still here. If an answer looked stuck or wrong, try asking more directly about Dave's work, projects, background, or hobbies.",
+    "Still running. It is local and intent-based, so weird phrasing may need a better checkpoint in the dataset.",
+    "Not broken, but maybe under-trained for that wording. Try a direct Dave question, or ask what this bot can talk about."
+  ]
+}

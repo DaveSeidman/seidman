@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "does Dave drink?",
+    "does he drink?",
+    "does Dave like bourbon?",
+    "does he like bourbon?",
+    "does Dave like coffee?",
+    "does he like coffee?",
+    "what does Dave eat?",
+    "what does he eat?",
+    "is Dave a picky eater?",
+    "is he a picky eater?",
+    "what food does Dave like?",
+    "what food does he like?"
+  ],
+  "answers": [
+    "Dave likes coffee and bourbon, and he eats everything.",
+    "Food-wise, Dave eats everything. Drink-wise, coffee and bourbon are both on the list.",
+    "Dave is not documented here as a picky eater. The dataset says he eats everything and likes coffee and bourbon."
+  ]
+}

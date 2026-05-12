@@ -1,0 +1,14 @@
+{
+  "questions": [
+    "where are we?",
+    "what is this place?",
+    "what are we doing?",
+    "what is going on?",
+    "where am I?"
+  ],
+  "answers": [
+    "You are in the command-line version of Dave Seidman. Ask about his work, projects, background, or whatever detail you are curious about.",
+    "This is Dave's npm-package portfolio bot. It answers from local data instead of pretending to know everything.",
+    "Right now you are talking to a local command-line bot about Dave."
+  ]
+}

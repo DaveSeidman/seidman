@@ -255,13 +255,18 @@ class App {
       return;
     }
 
-    if (/\boutside of work\b/.test(normalized)) {
+    if (/\boutside (?:of )?work\b/.test(normalized)) {
       this.sayAndContinue(this.getAnswerForIntent('personal.hobbies', 'Outside of work, Dave likes fishing, beach volleyball, reading, the New York Times crossword, and Code and Bourbon.'));
       return;
     }
 
     if (/\b(museum|museums|installation|installations)\b/.test(normalized) && /\b(proud|projects|worked on|work)\b/.test(normalized)) {
       this.sayAndContinue(this.getAnswerForIntent('work.proud-projects', 'Some museum installation projects Dave is proud of include The Waterways of Change in Buffalo, The Shockoe Institute in Virginia, and the National Urban League in Harlem.'));
+      return;
+    }
+
+    if (/\b(what|who|tell me about)\b/.test(normalized) && /\blocal projects\b/.test(normalized)) {
+      this.sayAndContinue(this.getAnswerForIntent('term.local-projects', "Local Projects is Dave's current full-time employer in Manhattan."));
       return;
     }
 
@@ -457,6 +462,18 @@ class App {
   }
 
   handleNameAnswer(answer) {
+    const normalized = this.normalizeInput(answer);
+
+    if (this.hasControlInput('action.endChat', normalized)) {
+      this.endChat();
+      return;
+    }
+
+    if (this.hasControlInput('action.noop', normalized)) {
+      this.sayAndContinue('No worries. This bot can keep calling you you.');
+      return;
+    }
+
     if (this.isLikelyQuestion(answer)) {
       this.handleUserAnswer(answer);
       return;
@@ -518,6 +535,10 @@ class App {
 
   openPortfolio() {
     this.promptToOpen("Dave's portfolio", 'https://daveseidman.com');
+  }
+
+  github() {
+    this.sayAndContinue(this.getAnswerForIntent('action.github', "This dataset does not include a public GitHub profile link yet. Dave's portfolio is at daveseidman.com, and this package lives at github.com/DaveSeidman/whoisdave."));
   }
 
   promptToOpen(label, url) {

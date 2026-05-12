@@ -8,11 +8,23 @@
     "Which school did you attend?",
     "What university did you graduate from?",
     "Do you have a degree?",
-    "Do you have your bachelors?"
+    "Do you have your bachelors?",
+    "does Dave have a degree?",
+    "does he have a degree?",
+    "does Dave have a bachelor's degree?",
+    "does he have a bachelor's degree?",
+    "what degree does Dave have?",
+    "what degree does he have?",
+    "what did Dave study?",
+    "what did he study?",
+    "what was his major?",
+    "what was Dave's major?"
   ],
   "answers": [
     "Dave got his degree in Computer Science from Drew University.",
     "Dave has a bachelor's degree in Computer Science from Drew University.",
-    "Dave went to Drew University."
+    "Dave went to Drew University.",
+    "Dave got his degree in Computer Science from Drew University, with a minor in Art.",
+    "Dave studied Computer Science at Drew University and minored in Art."
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "what is Dave's github?",
+    "what is his github?",
+    "what is your github?",
+    "where is Dave on github?",
+    "where is he on github?",
+    "show me Dave's github",
+    "show me his github",
+    "open Dave's github",
+    "open his github"
+  ],
+  "answers": [
+    "This dataset does not include a public GitHub profile link yet. Dave's portfolio is at daveseidman.com, and this package lives at github.com/DaveSeidman/whoisdave.",
+    "The dataset has this repo at github.com/DaveSeidman/whoisdave, but it does not yet define a broader GitHub profile answer."
+  ]
+}

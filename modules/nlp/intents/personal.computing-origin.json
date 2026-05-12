@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "how did Dave get into computers?",
+    "how did he get into computers?",
+    "how did Dave start programming?",
+    "how did he start programming?",
+    "when did Dave start coding?",
+    "when did he start coding?",
+    "what got Dave into technology?",
+    "what got him into technology?",
+    "did Dave have computers as a kid?",
+    "did he have computers as a kid?"
+  ],
+  "answers": [
+    "Dave grew up with technology in the house: a Commodore 64, dot-matrix printers, word processors, early Hewlett-Packard machines, Nintendo, and TI-89 calculators. BASIC on a TI-89 was his first programming language.",
+    "Computers were around Dave early. His father taught math and computer science, and by middle school Dave was around early HP machines and TI-89 calculators running BASIC.",
+    "Dave got into programming early through the technology around his house, especially TI-89 calculators that ran BASIC."
+  ]
+}

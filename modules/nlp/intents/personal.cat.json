@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "what kind of cat does Dave have?",
+    "what kind of cat does he have?",
+    "what breed is Dave's cat?",
+    "what breed is his cat?",
+    "what is Dave's cat like?",
+    "what is his cat like?",
+    "what is Dave's cat named?",
+    "what is his cat named?",
+    "what is the cat's name?"
+  ],
+  "answers": [
+    "The dataset only says Dave has one cat. It does not include the cat's name or breed yet.",
+    "This bot knows Dave has one cat, but it does not know the cat's name, breed, or personality yet."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "is Dave a frontend developer?",
+    "is he a frontend developer?",
+    "is Dave a front end developer?",
+    "is he a front end developer?",
+    "is Dave a backend developer?",
+    "is he a backend developer?",
+    "is Dave a full stack developer?",
+    "is he a full stack developer?",
+    "what kind of developer is Dave?",
+    "what kind of developer is he?"
+  ],
+  "answers": [
+    "Dave is broader than a frontend or backend label. He is a Senior Creative Technologist who works across JavaScript, WebGL, Node.js, Three.js, physical computing, and real-world interactive installations.",
+    "You could call Dave frontend-adjacent, full-stack-adjacent, or experiential, but the cleaner title is Senior Creative Technologist. He builds interactive software that often has to run in physical spaces.",
+    "Dave works across the stack when the project needs it, but his strongest association here is creative technology: JavaScript, WebGL, interactive installations, and rapid prototypes."
+  ]
+}

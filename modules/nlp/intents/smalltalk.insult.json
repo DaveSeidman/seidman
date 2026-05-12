@@ -11,7 +11,11 @@
     "that is wrong",
     "that's wrong",
     "you got that wrong",
-    "no that is wrong"
+    "no that is wrong",
+    "no that was wrong",
+    "try again",
+    "answer again",
+    "that answer was wrong"
   ],
   "answers": [
     "Fair. This bot is still local and data-driven, so it may need a better fact or intent for that.",

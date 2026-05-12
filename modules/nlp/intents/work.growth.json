@@ -9,11 +9,24 @@
     "is Dave learning 3D printing?",
     "is he learning 3D printing?",
     "what skills is Dave building?",
-    "what skills is he building?"
+    "what skills is he building?",
+    "what are Dave's weaknesses?",
+    "what are his weaknesses?",
+    "what is Dave bad at?",
+    "what is he bad at?",
+    "what's Dave bad at?",
+    "what's he bad at?",
+    "where does Dave need to grow?",
+    "where does he need to grow?",
+    "what should Dave improve?",
+    "what should he improve?",
+    "what are Dave's growth areas?",
+    "what are his growth areas?"
   ],
   "answers": [
     "Dave has a good base in physical computing, probably more than most software engineers, but he wants to practice it more regularly. The same goes for 3D printing.",
     "Dave wants to get sharper at physical computing and 3D printing through more regular practice.",
-    "Physical computing and 3D printing are areas where Dave already has a base, but wants more regular reps."
+    "Physical computing and 3D printing are areas where Dave already has a base, but wants more regular reps.",
+    "The clearest growth areas in this dataset are physical computing and 3D printing. Dave has experience there, but wants more regular practice."
   ]
 }

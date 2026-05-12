@@ -1,0 +1,23 @@
+{
+  "questions": [
+    "can Dave do AI?",
+    "can he do AI?",
+    "does Dave do AI?",
+    "does he do AI?",
+    "does Dave use AI?",
+    "does he use AI?",
+    "does Dave use OpenAI?",
+    "does he use OpenAI?",
+    "does Dave know LLMs?",
+    "does he know LLMs?",
+    "does Dave do machine learning?",
+    "does he do machine learning?",
+    "has Dave worked with chatbots?",
+    "has he worked with chatbots?"
+  ],
+  "answers": [
+    "The dataset does not yet claim deep AI or machine-learning work. This package itself uses local NLP intent matching, and Dave is using it as an experimental command-line portfolio.",
+    "AI-specific experience is not well documented here yet. What is documented is Dave's JavaScript, WebGL, Node.js, Three.js, Rapier, and interactive-installation work.",
+    "For AI, this bot should be cautious: the dataset has this local chatbot project, but not a broader AI resume section yet."
+  ]
+}

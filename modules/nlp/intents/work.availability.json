@@ -1,0 +1,23 @@
+{
+  "questions": [
+    "is Dave available for freelance?",
+    "is he available for freelance?",
+    "does Dave freelance?",
+    "does he freelance?",
+    "can Dave take freelance work?",
+    "can he take freelance work?",
+    "is Dave looking for work?",
+    "is he looking for work?",
+    "is Dave available?",
+    "is he available?",
+    "can I hire Dave?",
+    "can we hire Dave?",
+    "is Dave taking new projects?",
+    "is he taking new projects?"
+  ],
+  "answers": [
+    "This dataset does not say whether Dave is currently available for freelance or new work. Best move: ask him directly at daveseidman@gmail.com.",
+    "The bot should not guess about Dave's availability. You can email Dave at daveseidman@gmail.com and ask him directly.",
+    "Availability changes, and this local dataset does not have a current answer for that. Dave is reachable at daveseidman@gmail.com."
+  ]
+}

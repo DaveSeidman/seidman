@@ -3,7 +3,15 @@
     "where are you located?",
     "Where do you live currently?",
     "What's your address?",
-    "Where are you?"
+    "Where are you?",
+    "where does Dave live?",
+    "where does he live?",
+    "where is Dave based?",
+    "where is he based?",
+    "does Dave live in Brooklyn?",
+    "does he live in Brooklyn?",
+    "does Dave live in New York?",
+    "does he live in New York?"
   ],
   "answers": [
     "Dave lives in Brooklyn.",

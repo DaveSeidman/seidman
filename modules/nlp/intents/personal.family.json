@@ -23,7 +23,13 @@
     "does Dave have a pet?",
     "does he have a pet?",
     "what pets does Dave have?",
-    "what pets does he have?"
+    "what pets does he have?",
+    "is Dave single?",
+    "is he single?",
+    "does Dave have a wife?",
+    "does he have a wife?",
+    "does Dave have a spouse?",
+    "does he have a spouse?"
   ],
   "answers": [
     "Dave is married and has three kids and one cat.",

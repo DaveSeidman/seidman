@@ -10,11 +10,29 @@
     "does Dave over deliver?",
     "does he over deliver?",
     "what should an interviewer know about Dave?",
-    "what should an interviewer understand about Dave?"
+    "what should an interviewer understand about Dave?",
+    "does Dave overdeliver?",
+    "does he overdeliver?",
+    "does Dave over-deliver?",
+    "does he over-deliver?",
+    "can Dave solve hard problems?",
+    "can he solve hard problems?",
+    "is Dave good at hard problems?",
+    "is he good at hard problems?",
+    "is Dave creative?",
+    "is he creative?",
+    "is Dave technical?",
+    "is he technical?",
+    "is Dave fast?",
+    "is he fast?",
+    "is Dave inventive?",
+    "is he inventive?"
   ],
   "answers": [
     "Dave is inventive, fast, dependable, and good at finding a path quickly and executing on it.",
     "Dave figures out possible avenues quickly, can execute on them, and tends to over-deliver.",
-    "Dave works well when he can move quickly from idea to prototype to execution. He is dependable and tends to over-deliver."
+    "Dave works well when he can move quickly from idea to prototype to execution. He is dependable and tends to over-deliver.",
+    "Dave is creative and technical. He is especially useful on hard, unusual problems where he can move from abstract thinking to a working prototype quickly.",
+    "Yes. The dataset says Dave is inventive, fast, dependable, and tends to over-deliver."
   ]
 }
