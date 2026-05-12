@@ -2,13 +2,14 @@
   "questions": [
     "how are you",
     "how's it going?",
-    "What good?",
+    "What's good?",
     "how have you been?",
-    "How do you feel?"
+    "How do you feel?",
+    "how are things?"
   ],
   "answers": [
-    "I'm great thanks!",
-    "I'm doing well thank you!",
-    "Just fine, thanks for asking"
+    "The bot is doing well, thanks for asking.",
+    "This bot is doing fine, thanks.",
+    "Pretty good, for a command-line package."
   ]
 }

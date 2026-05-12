@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "does Dave love to code?",
+    "does he love to code?",
+    "does Dave like coding?",
+    "does he like coding?",
+    "does Dave enjoy programming?",
+    "does he enjoy programming?",
+    "does Dave still like programming?",
+    "does he still like programming?",
+    "does Dave enjoy coding?",
+    "does he enjoy coding?"
+  ],
+  "answers": [
+    "Dave loves to code.",
+    "Yes. Dave genuinely loves coding.",
+    "He really does. Dave still likes programming for its own sake."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "what's two plus two?",
+    "what is two plus two?",
+    "2 plus 2",
+    "2 + 2",
+    "what is 2 + 2?",
+    "what's 2 plus 2?",
+    "can you do math?",
+    "can you answer math questions?"
+  ],
+  "answers": [
+    "Two plus two is four. This bot can handle a few simple questions, but its real job is talking about Dave.",
+    "Four. The bot can do that one, but it is mostly here to talk about Dave.",
+    "2 + 2 = 4. It is not trying to be a calculator, but it can handle the classics."
+  ]
+}

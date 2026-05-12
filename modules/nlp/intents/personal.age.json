@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "how old is he?",
+    "how old is Dave?",
+    "what is his age?",
+    "what is Dave's age?",
+    "dave's age",
+    "his age",
+    "is Dave in his 40s?",
+    "is he in his 40s?"
+  ],
+  "answers": [
+    "Dave is in his 40s.",
+    "He is in his 40s.",
+    "Dave is somewhere in his 40s."
+  ]
+}

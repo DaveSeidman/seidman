@@ -5,6 +5,8 @@
     "nice to meet you, i'm %name%"
   ],
   "answers": [
-    "nice to meet you %name%"
+    "Nice to meet you, %name%.",
+    "Good to meet you, %name%.",
+    "Hey %name%, nice to meet you."
   ]
 }

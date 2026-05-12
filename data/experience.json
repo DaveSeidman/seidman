@@ -1,0 +1,83 @@
+{
+  "records": [
+    {
+      "id": "experience.summary",
+      "status": "needs_expansion",
+      "topic": "work_experience",
+      "facts": [
+        "Dave has been a developer for over 20 years.",
+        "Dave has worked with over a dozen New York City digital agencies."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave has been doing this for over 20 years, mostly around interactive development, web work, and agency-driven projects."
+        ],
+        "medium": [
+          "Dave has been a developer for over 20 years and has worked with more than a dozen NYC digital agencies. A lot of his work sits where software, interaction, and weird technical constraints meet."
+        ]
+      },
+      "source": "existing intent: work.experience",
+      "questionsToAnswer": [
+        "Which agencies or companies should be named?",
+        "What roles or titles should be listed?",
+        "What kind of work best represents the last 5 years?"
+      ]
+    },
+    {
+      "id": "experience.languages",
+      "status": "needs_expansion",
+      "topic": "technical_stack",
+      "facts": [
+        "Dave mostly writes JavaScript.",
+        "Dave has used Python.",
+        "Dave has used C#.",
+        "Dave has used WebGL.",
+        "Dave has used Node.js."
+      ],
+      "answerVariants": {
+        "short": [
+          "Mostly JavaScript and Node.js, with WebGL, Python, and C# when the project calls for it."
+        ],
+        "medium": [
+          "Most of Dave's day-to-day work has been JavaScript and Node.js. He has also used WebGL, Python, C#, and whatever else made sense for the project."
+        ]
+      },
+      "source": "existing intent: work.languages",
+      "questionsToAnswer": [
+        "Which frameworks should be named?",
+        "Which languages are current strengths versus past-use tools?",
+        "What technical areas should interviewers associate with you?"
+      ]
+    },
+    {
+      "id": "experience.learning",
+      "status": "draft",
+      "topic": "professional_development",
+      "facts": [
+        "Dave frequently attends conferences.",
+        "Dave frequently attends meetups.",
+        "Dave attends conferences and meetups to stay sharp."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave frequently attends conferences and meetups to stay sharp."
+        ]
+      },
+      "source": "2026-05-11 chat"
+    },
+    {
+      "id": "experience.loves-coding",
+      "status": "draft",
+      "topic": "motivation",
+      "facts": [
+        "Dave loves to code."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave loves to code."
+        ]
+      },
+      "source": "2026-05-11 chat"
+    }
+  ]
+}

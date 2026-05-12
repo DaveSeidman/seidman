@@ -1,3 +1,3 @@
 # Seidman
 
-A command line version of https://daveseidman.com
+A CLI Chatbot version of https://daveseidman.com

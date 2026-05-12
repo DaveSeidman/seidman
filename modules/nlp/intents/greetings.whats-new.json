@@ -1,0 +1,20 @@
+{
+  "questions": [
+    "what's new?",
+    "whats new?",
+    "what is new?",
+    "anything new?",
+    "what's going on?",
+    "whats going on?",
+    "what's up?",
+    "whats up?",
+    "sup?",
+    "what's happening?",
+    "whats happening?"
+  ],
+  "answers": [
+    "This bot is still learning more about Dave. Ask about his work, projects, background, or what he likes.",
+    "New here means more Dave details are being added. Try asking about his projects, background, or what he does for fun.",
+    "Mostly this bot is getting better at answering questions about Dave."
+  ]
+}

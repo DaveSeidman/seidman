@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "is he nice?",
+    "is Dave nice?",
+    "is he a nice guy?",
+    "is Dave a nice guy?",
+    "is Dave kind?",
+    "is he kind?",
+    "is he pleasant to work with?",
+    "is Dave pleasant to work with?",
+    "do people like working with him?",
+    "do people enjoy working with Dave?",
+    "what is Dave like to work with?",
+    "what is he like to work with?"
+  ],
+  "answers": [
+    "Yeah, Dave is a very nice guy. Most people enjoy working with him.",
+    "Yes. Dave is easy to work with, and most people seem to enjoy working with him.",
+    "Yes, he is. Dave is kind, collaborative, and generally pretty pleasant to work with."
+  ]
+}

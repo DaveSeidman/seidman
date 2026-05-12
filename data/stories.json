@@ -1,0 +1,87 @@
+{
+  "records": [
+    {
+      "id": "story.placeholder.technical-judgment",
+      "status": "draft",
+      "topic": "technical_judgment",
+      "prompt": "Tell me about a time you had to make a technical decision with incomplete information.",
+      "notes": [],
+      "answerVariants": {}
+    },
+    {
+      "id": "story.plinko-physics",
+      "status": "draft",
+      "topic": "technical_judgment",
+      "prompt": "What is a project that proves you are useful on problems you cannot just google?",
+      "projectName": null,
+      "publicDisclosure": "Do not include the client or project name in public answers.",
+      "privateContext": {
+        "client": "Denver Museum of Nature and Science",
+        "exhibit": "Gems and Minerals",
+        "controls": "Physical dials"
+      },
+      "facts": [
+        "Dave created a non-deterministic Plinko-style game.",
+        "Dave was the lead engineer.",
+        "Dave partnered with the VXD team.",
+        "The game ran on a large portrait monitor.",
+        "The game responded to users moving physical dials.",
+        "Dave integrated the physical dials.",
+        "Dave developed custom pipelines to go from Cinema 4D or Blender to Three.js.",
+        "The asset pipeline used mesh names to activate physics, motors, restitution, and related behaviors.",
+        "There was an existing 2D prototype coded in Unity.",
+        "Dave started fresh in web technology.",
+        "The experience showed a metallic ball launched by the user when they pressed a button.",
+        "The launcher mechanism slowly swept back and forth.",
+        "The ball passed through obstacles on its way to 14 different buckets at the bottom.",
+        "Depending on the bucket, the ball needed to have hit the correct sequence of obstacles on the way down.",
+        "Dave used a physics engine that could be fast-forwarded to the end.",
+        "Dave inspected simulation steps and collisions to verify that the required bucket and obstacle conditions were satisfied.",
+        "Previous prototype attempts involved faking the physics, obstacle positions, or collisions.",
+        "The user only saw one ball drop.",
+        "Behind the scenes, the simulation could run thousands of times to find a valid drop for the user's dial configuration and launch timing.",
+        "The project was built with Three.js and Rapier physics."
+      ],
+      "rawNotes": [
+        "I created a non-deterministic plinko style game that runs on a large portrait monitor ans responds to users moving dials. It's meant to look like a metallic ball, launched by the user when they hit a button as the launcher mechanism slowly sweeps back and forth. It passes through obstacles on it's way to 14 different buckets at the bottom and depending on which bucket it falls in, it had to have had hit the right sequence of obstacles on the way there. I accomplished this by using a physic engine that could be fast-forwarded to the end and it's steps and collisions checked to make sure those conditions were indeed satisfied. All previous attempts to prototype this involved faking the physics, or faking the obstacle positions or collisions. When a user launches a ball they only see one drop, but in actuality, the simulation may have run thousands of times to find the one that works for how they configured their dials plus at what point in the launcher's sweeping motion that they dropped the ball. I build it with threejs and rapier physics, the final product is quite impressive"
+      ],
+      "editedNotes": [
+        "I created a non-deterministic Plinko-style game that ran on a large portrait monitor and responded to users moving physical dials. It looked like a metallic ball being launched when the user pressed a button, while the launcher mechanism slowly swept back and forth. The ball passed through obstacles on its way to 14 different buckets at the bottom, and depending on which bucket it landed in, it had to have hit the correct sequence of obstacles on the way down. I solved this by using a physics engine that could be fast-forwarded to the end, then checking the simulation steps and collisions to make sure the conditions were satisfied. Earlier prototypes tried to fake the physics, obstacle positions, or collisions. When a user launched a ball, they only saw one drop, but the simulation may have run thousands of times behind the scenes to find one that worked for their dial configuration and the launcher timing. I built it with Three.js and Rapier physics, and the final product was pretty impressive."
+      ],
+      "roleNotes": [
+        "Lead engineer, partnering with the VXD team.",
+        "Developed custom pipelines from Cinema 4D and Blender to Three.js.",
+        "Used mesh naming conventions to activate physics behavior, motors, restitution, and related runtime settings.",
+        "Integrated physical dials, though the physics fast-forwarding was the more interesting technical problem.",
+        "Started fresh in web technology after an existing 2D Unity prototype."
+      ],
+      "answerVariants": {
+        "short": [
+          "One good example is a Plinko-style museum installation Dave built with Three.js and Rapier. The user only saw one ball drop, but behind the scenes the simulation may have run thousands of times to find a physically valid path that matched their dial settings and launch timing."
+        ],
+        "medium": [
+          "A good example is a non-deterministic Plinko-style museum installation Dave led with the VXD team. It ran on a large portrait monitor, with users adjusting physical dials, waiting for a sweeping launcher, and dropping what looked like a metallic ball through obstacles into one of 14 buckets. The hard part was that each bucket required the ball to have hit the right sequence of obstacles on the way down. Earlier prototypes tried to fake the physics or fake the collisions, but that did not hold up. Dave built it with Three.js and Rapier, then fast-forwarded the physics simulation and inspected the collision history until he found a drop that satisfied the user's dial configuration and launch timing. The user saw one clean drop; the system may have simulated thousands."
+        ]
+      },
+      "openQuestions": [
+        "What was the approximate timeline?"
+      ]
+    },
+    {
+      "id": "story.placeholder-debugging",
+      "status": "draft",
+      "topic": "debugging",
+      "prompt": "Tell me about a hard bug or production issue you solved.",
+      "notes": [],
+      "answerVariants": {}
+    },
+    {
+      "id": "story.placeholder-collaboration",
+      "status": "draft",
+      "topic": "collaboration",
+      "prompt": "Tell me about a project where collaboration changed the outcome.",
+      "notes": [],
+      "answerVariants": {}
+    }
+  ]
+}

@@ -1,12 +1,20 @@
 {
   "name": "seidman",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "description": "the cli portfolio of dave seidman",
   "main": "index.js",
-  "repository": "https://gitlab.com/daveseidman/seidman",
+  "bin": {
+    "seidman": "bin/seidman.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DaveSeidman/seidman.git"
+  },
   "scripts": {
-    "start": "node index.js",
-    "postinstall": "node index.js",
+    "start": "node bin/seidman.js",
+    "dev": "node bin/seidman.js --dev",
+    "dev:watch": "node scripts/dev-watch.js",
+    "postinstall": "node scripts/postinstall.js",
     "train": "cd modules/nlp && node train"
   },
   "author": "dave seidman",
@@ -16,12 +24,12 @@
     "open": "^8.4.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1",
     "eslint": "^5.6.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^3.1.14"
   },
   "eslintConfig": {
     "extends": "airbnb",

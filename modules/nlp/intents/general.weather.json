@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "how's the weather where you are?",
+    "how is the weather where you are?",
+    "what's the weather like?",
+    "what is the weather like?",
+    "what's the weather in Brooklyn?",
+    "what's the weather in New York?",
+    "is it raining where Dave is?",
+    "is it cold where Dave is?"
+  ],
+  "answers": [
+    "This bot does not check live weather yet, so it should not guess. Dave is based in Brooklyn, though.",
+    "It cannot check live weather yet. It only knows that Dave is based in Brooklyn.",
+    "No live weather data is wired in yet, so this bot should not make up a forecast."
+  ]
+}

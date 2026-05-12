@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "does Dave go to conferences?",
+    "does he go to conferences?",
+    "does Dave attend meetups?",
+    "does he attend meetups?",
+    "how does Dave stay sharp?",
+    "how does he stay sharp?",
+    "how does Dave keep learning?",
+    "how does he keep learning?",
+    "does Dave keep up with technology?",
+    "does he keep up with technology?",
+    "does Dave still learn?",
+    "does he still learn?"
+  ],
+  "answers": [
+    "Dave frequently attends conferences and meetups to stay sharp.",
+    "He keeps sharp by going to conferences and meetups pretty regularly.",
+    "Dave likes staying close to the developer community, so he attends conferences and meetups when he can."
+  ]
+}

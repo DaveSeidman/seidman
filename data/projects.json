@@ -1,0 +1,112 @@
+{
+  "records": [
+    {
+      "id": "project.holochat",
+      "status": "needs_expansion",
+      "name": "HoloChat",
+      "description": "Realtime holographic chat application.",
+      "tags": ["holograms", "frontend", "backend", "experiment"],
+      "urlPath": "HoloChat",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.living-distance",
+      "status": "needs_expansion",
+      "name": "Living Distance",
+      "description": "Self-propelled robot sent to space.",
+      "tags": ["computer-vision", "physical-computing"],
+      "urlPath": "LivingDistance",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.pride-parade",
+      "status": "needs_expansion",
+      "name": "Pride Parade",
+      "description": "Interactive face tracking app.",
+      "tags": ["frontend", "computer-vision"],
+      "urlPath": "Pride-Parade",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.cam-repeater",
+      "status": "needs_expansion",
+      "name": "Cam Repeater",
+      "description": "Digital periscopes.",
+      "tags": ["computer-vision", "experiment"],
+      "urlPath": "Cam-Repeater",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.fakebook",
+      "status": "needs_expansion",
+      "name": "Fakebook",
+      "description": "Simulated chat application.",
+      "tags": ["apps"],
+      "urlPath": "Fakebook",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.stranger-tees",
+      "status": "needs_expansion",
+      "name": "Stranger Tees",
+      "description": "Interactive tee shirt.",
+      "tags": ["experiment", "physical-computing", "backend"],
+      "urlPath": "StrangerTees",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.nfl-ar",
+      "status": "needs_expansion",
+      "name": "NFL AR by Verizon",
+      "description": "NFL AR experience by Verizon.",
+      "tags": ["augmented-reality", "computer-vision", "live-events"],
+      "urlPath": "NFL-AR",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.refurbished",
+      "status": "needs_expansion",
+      "name": "ReFurbished",
+      "description": "Remote controlled Furby.",
+      "tags": ["physical-computing"],
+      "urlPath": "Furby",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.wedding-website",
+      "status": "needs_expansion",
+      "name": "Wedding Website",
+      "description": "DeepZoom viewer integration.",
+      "tags": ["frontend"],
+      "urlPath": "Wedding",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.catdive",
+      "status": "needs_expansion",
+      "name": "CatDive",
+      "description": "It's cats all the way down.",
+      "tags": ["frontend", "computer-vision"],
+      "urlPath": "CatDive",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.vr-coding",
+      "status": "needs_expansion",
+      "name": "VR Coding",
+      "description": "Immersive realtime coding environment.",
+      "tags": ["augmented-reality", "virtual-reality", "experiment"],
+      "urlPath": "VR-Coding",
+      "source": "existing projects.json"
+    },
+    {
+      "id": "project.the-claw",
+      "status": "needs_expansion",
+      "name": "The Claw",
+      "description": "Internet-controllable arcade claw machine.",
+      "tags": ["physical-computing", "live-events", "frontend", "backend"],
+      "urlPath": "The-Claw",
+      "source": "existing projects.json"
+    }
+  ]
+}

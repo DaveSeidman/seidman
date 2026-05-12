@@ -11,8 +11,8 @@
     "Do you have your bachelors?"
   ],
   "answers": [
-    "I got my degree in Comp Sci from Drew University",
-    "I have my bachelors in Computer Science from Drew U",
-    "I went to Drew University"
+    "Dave got his degree in Computer Science from Drew University.",
+    "Dave has a bachelor's degree in Computer Science from Drew University.",
+    "Dave went to Drew University."
   ]
 }

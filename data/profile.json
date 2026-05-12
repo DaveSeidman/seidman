@@ -1,0 +1,232 @@
+{
+  "records": [
+    {
+      "id": "profile.identity",
+      "status": "approved",
+      "topic": "identity",
+      "facts": [
+        "His name is Dave Seidman."
+      ],
+      "answerVariants": {
+        "short": [
+          "This is a command-line bot about Dave Seidman."
+        ],
+        "medium": [
+          "This package is a command-line way to get a feel for who Dave is, what he has worked on, and how he thinks."
+        ]
+      },
+      "source": "existing intent: personal.who"
+    },
+    {
+      "id": "profile.location",
+      "status": "approved",
+      "topic": "location",
+      "facts": [
+        "Dave lives in Brooklyn.",
+        "Dave is based in New York City."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave is based in Brooklyn, New York."
+        ],
+        "medium": [
+          "Dave is based in Brooklyn, so most of his working life has been in and around the New York tech and agency world."
+        ]
+      },
+      "source": "existing intent: personal.location"
+    },
+    {
+      "id": "profile.education",
+      "status": "approved",
+      "topic": "education",
+      "facts": [
+        "Dave went to Drew University.",
+        "Dave has a bachelor's degree in Computer Science from Drew University.",
+        "Dave minored in Art at Drew University."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave went to Drew University, where he got his degree in Computer Science and minored in Art."
+        ],
+        "medium": [
+          "Dave went to Drew University, got his degree in Computer Science, and minored in Art."
+        ]
+      },
+      "source": "existing intent: personal.education"
+    },
+    {
+      "id": "profile.early-background",
+      "status": "draft",
+      "topic": "biography",
+      "facts": [
+        "Dave grew up in New York.",
+        "Dave's father was a math and computer science teacher.",
+        "There was a lot of technology in Dave's house growing up.",
+        "Dave's family had a Commodore 64 early on.",
+        "Dave's family had dot matrix printers and word processors.",
+        "By middle school, Dave's family had early Hewlett-Packard computers.",
+        "Dave grew up with Nintendo.",
+        "Dave used TI-89 calculators that ran BASIC.",
+        "BASIC was Dave's first programming language.",
+        "Dave's mother was more arts-oriented.",
+        "Dave's mother studied anthropology.",
+        "Dave's mother became a teacher and museum curator."
+      ],
+      "rawNotes": [
+        "I grew up in New York, my father was a math and comp sci teacher and always had a good amoutn of tech in our house. We had a commodore 64 early on, dot matrix printers, word processors, by the time i was in middle school we had early hewlitt packard machines, nintendo, and TI-89 calculators (which ran BASIC, my first programming language). My mother was more artsy, got her degree in anthropology and became a teacher and museum curator"
+      ],
+      "editedNotes": [
+        "I grew up in New York. My father was a math and computer science teacher, so we always had a good amount of technology in the house. We had a Commodore 64 early on, dot matrix printers, word processors, Nintendo, and by the time I was in middle school, early Hewlett-Packard machines and TI-89 calculators that ran BASIC. BASIC was my first programming language. My mother was more arts-oriented. She studied anthropology and became a teacher and museum curator."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave grew up in New York in a house that had both technology and art around. His dad taught math and computer science, and his mom came from anthropology, teaching, and museum work."
+        ],
+        "medium": [
+          "Dave grew up in New York, and the combination that shaped him was pretty clear early on. His father taught math and computer science, so there was always technology in the house: a Commodore 64, dot matrix printers, word processors, early Hewlett-Packard machines, Nintendo, and TI-89 calculators running BASIC, which became Dave's first programming language. His mother was more arts-oriented. She studied anthropology and became a teacher and museum curator. That mix of technical systems and cultural or visual experience still feels connected to the kind of work Dave likes."
+        ]
+      },
+      "source": "2026-05-11 chat"
+    },
+    {
+      "id": "profile.engineering-style",
+      "status": "draft",
+      "topic": "engineering_style",
+      "facts": [
+        "Dave is a highly creative engineer.",
+        "Dave is strong at abstract thinking.",
+        "Dave cares deeply about the functionality of the apps and experiences he builds.",
+        "Dave tries to make the things he builds beautiful and elegant as well as functional.",
+        "Dave feels most useful on problems where you cannot just google the answer."
+      ],
+      "rawNotes": [
+        "I'm a highly creative engineer that's great at abstract thinking. I care deeply about the functionality of the apps or experiences I build, but I strive to make them as beautiful and elegant as possible as well.",
+        "The kind you can't just google the answer to."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave is a highly creative engineer, and he is good at abstract thinking. He likes the problems where you cannot just google the answer."
+        ],
+        "medium": [
+          "Dave is a highly creative engineer with a strong abstract-thinking side. He cares deeply about the functionality of the apps and experiences he builds, but he does not think function and polish should be treated as separate things. He likes the problems where you cannot just google the answer, and he tries to make the solution beautiful and elegant once he finds it."
+        ]
+      },
+      "source": "2026-05-11 chat"
+    },
+    {
+      "id": "profile.personal.hobbies",
+      "status": "needs_expansion",
+      "topic": "personal",
+      "facts": [
+        "Dave plays indoor and outdoor volleyball.",
+        "Dave loves beach volleyball.",
+        "Dave plays ultimate frisbee.",
+        "Dave loves being on the beach.",
+        "Dave likes spending time at the beach.",
+        "Dave enjoys reading."
+      ],
+      "answerVariants": {
+        "short": [
+          "Outside of work Dave plays volleyball and ultimate frisbee, spends time at the beach, and reads."
+        ]
+      },
+      "source": "existing intents: personal.hobbies, personal.fav-book"
+    },
+    {
+      "id": "profile.personal.music",
+      "status": "draft",
+      "topic": "personal",
+      "facts": [
+        "Dave likes hip hop.",
+        "Dave likes conscious hip hop.",
+        "Dave likes rock.",
+        "Dave likes Weezer.",
+        "Dave likes Led Zeppelin.",
+        "Dave likes Ben Folds."
+      ],
+      "rawNotes": [
+        "dave like's hiphop, conscious hip hop, rock, weezer, led zeppelin, ben folds, etc."
+      ],
+      "editedNotes": [
+        "Dave likes hip hop, conscious hip hop, rock, Weezer, Led Zeppelin, Ben Folds, and similar music."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave likes hip hop, conscious hip hop, rock, Weezer, Led Zeppelin, and Ben Folds."
+        ],
+        "medium": [
+          "Dave's music taste includes hip hop, conscious hip hop, rock, Weezer, Led Zeppelin, Ben Folds, and plenty of adjacent stuff."
+        ]
+      },
+      "source": "2026-05-11 chat"
+    },
+    {
+      "id": "profile.personal.biography",
+      "status": "draft",
+      "topic": "personal",
+      "facts": [
+        "Dave is 5'5\".",
+        "Dave weighs about 140 pounds.",
+        "Dave is in his 40s.",
+        "Dave has a lot of gray hair.",
+        "Dave lives in Brooklyn.",
+        "Dave is married.",
+        "Dave has a lot of young kids.",
+        "Dave loves to fish.",
+        "Dave likes coffee.",
+        "Dave likes bourbon.",
+        "Dave has a semi-monthly coding meetup called Code and Bourbon.",
+        "The Code and Bourbon website is codeandbourbon.com.",
+        "Dave likes to do the New York Times crossword.",
+        "Dave listens to a lot of news stations.",
+        "Dave prefers listening to Car Talk on NPR.",
+        "Dave eats everything."
+      ],
+      "rawNotes": [
+        "dave is 5'5\" about 140 lbs, has a lot of gray hair, is in his 40's, loves to fish, lives in brooklyn, like coffee, bourbon, has a semi monthly coding meetup called \"code and bourbon\" (codeandbourbon.com), is married and has a lot of young kids. Likes to do the NYT crossword. Listens to a lot of news stations but prefers to listen to CarTalk on NPR. He eats everything."
+      ],
+      "editedNotes": [
+        "Dave is 5'5\", about 140 pounds, has a lot of gray hair, and is in his 40s. He lives in Brooklyn, is married, and has a lot of young kids. He loves to fish, likes coffee and bourbon, and runs a semi-monthly coding meetup called Code and Bourbon at codeandbourbon.com. He likes doing the New York Times crossword, listens to a lot of news stations, but prefers listening to Car Talk on NPR. He eats everything."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave lives in Brooklyn, is married, has a lot of young kids, likes coffee and bourbon, loves fishing, and does the New York Times crossword."
+        ],
+        "medium": [
+          "Dave lives in Brooklyn, is married, and has a lot of young kids. He is in his 40s, has a lot of gray hair, loves to fish, likes coffee and bourbon, and runs a semi-monthly coding meetup called Code and Bourbon. He also likes the New York Times crossword, listens to a lot of news, prefers Car Talk on NPR, and eats everything."
+        ]
+      },
+      "visibility": "personal",
+      "source": "2026-05-11 chat"
+    },
+    {
+      "id": "profile.personality.nice",
+      "status": "draft",
+      "topic": "personality",
+      "facts": [
+        "Dave is a very nice guy.",
+        "Most people enjoy working with Dave."
+      ],
+      "answerVariants": {
+        "short": [
+          "Yeah, Dave is a very nice guy. Most people enjoy working with him."
+        ]
+      },
+      "source": "2026-05-11 chat"
+    },
+    {
+      "id": "profile.preferences.colors",
+      "status": "low_priority",
+      "topic": "personal",
+      "facts": [
+        "Dave likes blue and green."
+      ],
+      "answerVariants": {
+        "short": [
+          "Blue and green."
+        ]
+      },
+      "source": "existing intent: personal.fav-color"
+    }
+  ]
+}

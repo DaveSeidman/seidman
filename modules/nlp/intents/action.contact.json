@@ -5,5 +5,10 @@
     "Can I contact you?",
     "How can I send you a message?",
     "I want to write you an email"
+  ],
+  "answers": [
+    "You can email Dave at daveseidman@gmail.com.",
+    "Dave's email is daveseidman@gmail.com.",
+    "The best way to reach Dave is daveseidman@gmail.com."
   ]
 }

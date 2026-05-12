@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "did Dave study art?",
+    "did he study art?",
+    "what was Dave's minor?",
+    "what was his minor?",
+    "did Dave minor in art?",
+    "did he minor in art?",
+    "does Dave have an art background?",
+    "does he have an art background?"
+  ],
+  "answers": [
+    "Dave minored in Art at Drew University.",
+    "His minor at Drew University was Art.",
+    "Dave studied Computer Science at Drew and also minored in Art."
+  ]
+}

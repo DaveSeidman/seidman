@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "id": "interview.why-hire",
+      "status": "draft",
+      "topic": "interview",
+      "prompt": "Why should someone hire you?",
+      "notes": [],
+      "answerVariants": {}
+    },
+    {
+      "id": "interview.strengths",
+      "status": "draft",
+      "topic": "interview",
+      "prompt": "What are your biggest strengths as an engineer?",
+      "notes": [
+        "Dave is useful on problems where you cannot just google the answer.",
+        "Dave is strong at abstract thinking.",
+        "Dave combines functional concern with aesthetic and interaction judgment."
+      ],
+      "rawNotes": [
+        "I'm a highly creative engineer that's great at abstract thinking.",
+        "The kind you can't just google the answer to."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave is good at the problems you cannot just google your way through."
+        ],
+        "medium": [
+          "One of Dave's biggest strengths is abstract thinking. He is useful when the problem is weird, underdefined, or specific enough that there is not a clean answer waiting online. He still cares a lot about execution, though. The thing has to work, and ideally it should feel elegant too."
+        ]
+      }
+    },
+    {
+      "id": "interview.weaknesses",
+      "status": "draft",
+      "topic": "interview",
+      "prompt": "What are you still working on?",
+      "notes": [],
+      "answerVariants": {}
+    },
+    {
+      "id": "interview.ambiguity",
+      "status": "draft",
+      "topic": "interview",
+      "prompt": "How do you handle ambiguous projects?",
+      "notes": [],
+      "answerVariants": {}
+    },
+    {
+      "id": "interview.manager",
+      "status": "draft",
+      "topic": "interview",
+      "prompt": "What should a manager know about working with you?",
+      "notes": [],
+      "answerVariants": {}
+    }
+  ]
+}

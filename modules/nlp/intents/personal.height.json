@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "how tall is he?",
+    "how tall is Dave?",
+    "what is his height?",
+    "what is Dave's height?",
+    "dave's height",
+    "his height",
+    "is he short or tall?",
+    "is Dave short or tall?",
+    "is he short?",
+    "is Dave short?",
+    "is he tall?",
+    "is Dave tall?"
+  ],
+  "answers": [
+    "Dave is 5'5\".",
+    "Dave is five foot five.",
+    "He is 5'5\", so definitely on the shorter side."
+  ]
+}

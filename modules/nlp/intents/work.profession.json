@@ -1,0 +1,25 @@
+{
+  "questions": [
+    "what does dave do?",
+    "what does Dave do?",
+    "what is dave's profession?",
+    "what's dave's profession?",
+    "what is Dave's job?",
+    "what's Dave's job?",
+    "what does Dave do professionally?",
+    "what do you do for a living?",
+    "what is your profession?",
+    "what's your profession?",
+    "what do you do professionally?",
+    "what is your career?",
+    "what is Dave's career?",
+    "what kind of work do you do?",
+    "what kind of engineer is Dave?",
+    "what kind of engineer are you?"
+  ],
+  "answers": [
+    "Dave is a creative engineer who builds interactive apps and experiences. He is especially good at the problems you cannot just google your way through.",
+    "Dave builds interactive software, installations, and experiences. His sweet spot is the weird, ambiguous work where there is not an obvious answer online.",
+    "Professionally, Dave is a creative engineer. He works across web, interaction, physical computing, and experiential projects."
+  ]
+}

@@ -2,11 +2,26 @@
   "questions": [
     "What are your hobbies?",
     "What do you like to do in your spare time?",
-    "Do you play any sports?"
+    "Do you play any sports?",
+    "what does he do for fun?",
+    "what does Dave do for fun?",
+    "what does he like to do for fun?",
+    "what does Dave like to do for fun?",
+    "what does he do in his free time?",
+    "what does Dave do in his free time?",
+    "what does he do outside of work?",
+    "what does Dave do outside of work?",
+    "what are Dave's hobbies?",
+    "what are his hobbies?",
+    "what does Dave enjoy?",
+    "what does he enjoy?"
   ],
   "answers": [
-    "I love indoor and outdoor volleyball and also ultimate frisbee.",
-    "I like to hang out on the beach.",
-    "I enjoy reading."
+    "Dave loves indoor and outdoor volleyball, especially beach volleyball, and also ultimate frisbee.",
+    "Dave likes to hang out on the beach.",
+    "Dave enjoys reading.",
+    "Dave loves fishing, coffee, bourbon, and the New York Times crossword.",
+    "For fun, Dave fishes, plays volleyball, does the New York Times crossword, and runs Code and Bourbon.",
+    "Outside of work, Dave likes fishing, beach volleyball, ultimate frisbee, the beach, reading, and the New York Times crossword."
   ]
 }

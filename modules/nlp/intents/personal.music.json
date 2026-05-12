@@ -1,0 +1,24 @@
+{
+  "questions": [
+    "what music does Dave like?",
+    "what music does he like?",
+    "what kind of music does Dave like?",
+    "what kind of music does he like?",
+    "what does Dave listen to?",
+    "what does he listen to?",
+    "does Dave like hip hop?",
+    "does he like hip hop?",
+    "does Dave like rock?",
+    "does he like rock?",
+    "does Dave like Weezer?",
+    "does Dave like Led Zeppelin?",
+    "does Dave like Ben Folds?",
+    "who are Dave's favorite musicians?",
+    "what bands does Dave like?"
+  ],
+  "answers": [
+    "Dave likes hip hop, conscious hip hop, rock, Weezer, Led Zeppelin, and Ben Folds.",
+    "Dave's music taste includes hip hop, conscious hip hop, rock, Weezer, Led Zeppelin, Ben Folds, and similar stuff.",
+    "He listens to hip hop, conscious hip hop, rock, Weezer, Led Zeppelin, Ben Folds, and plenty around that."
+  ]
+}

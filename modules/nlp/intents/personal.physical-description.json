@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "how big is he?",
+    "how big is Dave?",
+    "what is his size?",
+    "what size is he?",
+    "what does he look like?",
+    "what does Dave look like?",
+    "describe Dave physically",
+    "what is Dave's physical description?"
+  ],
+  "answers": [
+    "Dave is 5'5\", about 140 pounds, in his 40s, and has a lot of gray hair.",
+    "Physically, Dave is 5'5\", around 140 pounds, in his 40s, with a lot of gray hair.",
+    "Dave is short, about 140 pounds, in his 40s, and pretty gray-haired."
+  ]
+}
