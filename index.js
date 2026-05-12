@@ -40,8 +40,9 @@ class App {
       userName: null,
       answerQueues: {},
       lastAnswerByIntent: {},
-      instantOutput: process.env.SEIDMAN_INSTANT_OUTPUT === '1'
-        || (!process.env.SEIDMAN_ALLOW_NON_TTY && (!process.stdin.isTTY || !process.stdout.isTTY)),
+      instantOutput: process.env.WHOISDAVE_INSTANT_OUTPUT === '1'
+        || process.env.SEIDMAN_INSTANT_OUTPUT === '1'
+        || (!process.env.WHOISDAVE_ALLOW_NON_TTY && !process.env.SEIDMAN_ALLOW_NON_TTY && (!process.stdin.isTTY || !process.stdout.isTTY)),
     };
 
     this.routes = {
@@ -83,7 +84,7 @@ class App {
 
   start() {
     const leadIn = this.options.mode === 'dev'
-      ? 'Starting local Seidman dev session...'
+      ? 'Starting local Who Is Dave dev session...'
       : 'Follow the white rabbit...';
 
     const leadInOptions = this.options.mode === 'dev'
@@ -161,7 +162,7 @@ class App {
   }
 
   endChat() {
-    console.log('Goodbye for now. To talk to this bot again, just type `npx seidman`.');
+    console.log('Goodbye for now. To talk to this bot again, just type `npx whoisdave`.');
     this.rl.close();
   }
 
@@ -328,11 +329,10 @@ class App {
       });
     }
     if (filteredProjects.length > 1) {
-      let message = '';
-      filteredProjects.forEach((project, index) => {
-        message += `${index + 1}) ${project.name}: ${project.desc}, `;
-      });
-      this.typewriter.typeSentence(`Okay, here are some of Dave's ${type} projects: ${message}`);
+      const projectList = filteredProjects
+        .map((project, index) => `${index + 1}) ${project.name}: ${project.desc}`)
+        .join('\n');
+      this.sayAndContinue(`Okay, here are some of Dave's ${type} projects:\n${projectList}`);
     }
     // console.log(`okay, show Dave's ${type} Projects`);
     // console.log(filteredProjects);

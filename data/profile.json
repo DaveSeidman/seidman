@@ -205,11 +205,26 @@
       "topic": "personality",
       "facts": [
         "Dave is a very nice guy.",
-        "Most people enjoy working with Dave."
+        "Most people enjoy working with Dave.",
+        "Dave is funny.",
+        "Dave is professional.",
+        "Dave is fun to work with.",
+        "Dave likes to laugh.",
+        "Dave stays focused."
+      ],
+      "rawNotes": [
+        "Dave is funny, professional, fun to work with. Likes to laugh, stays focused"
+      ],
+      "editedNotes": [
+        "Dave is funny, professional, and fun to work with. He likes to laugh, but he stays focused."
       ],
       "answerVariants": {
         "short": [
           "Yeah, Dave is a very nice guy. Most people enjoy working with him."
+        ],
+        "medium": [
+          "Dave is funny, professional, and fun to work with. He likes to laugh, but he stays focused.",
+          "Dave has a good mix of humor and professionalism. He likes to laugh, but he keeps the work moving."
         ]
       },
       "source": "2026-05-11 chat"

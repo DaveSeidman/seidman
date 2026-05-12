@@ -1,11 +1,11 @@
-# Seidman
+# Who Is Dave
 
 A command-line chatbot about Dave Seidman.
 
 The idea is simple: instead of sending a normal portfolio link or resume, Dave can send people an npm package they can run in their terminal.
 
 ```sh
-npx seidman
+npx whoisdave
 ```
 
 It opens a local terminal conversation where people can ask about Dave's work, projects, background, preferences, and other biographical details.
@@ -84,5 +84,5 @@ npm publish
 Then test the published package:
 
 ```sh
-npx seidman@latest
+npx whoisdave@latest
 ```

@@ -30,11 +30,11 @@ function getWatchFiles(target) {
 }
 
 function start() {
-  child = spawn(process.execPath, ['bin/seidman.js', '--dev'], {
+  child = spawn(process.execPath, ['bin/whoisdave.js', '--dev'], {
     cwd: root,
     stdio: 'inherit',
     env: Object.assign({}, process.env, {
-      SEIDMAN_ALLOW_NON_TTY: '1',
+      WHOISDAVE_ALLOW_NON_TTY: '1',
     }),
   });
 

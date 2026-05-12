@@ -1,18 +1,18 @@
 {
-  "name": "seidman",
+  "name": "whoisdave",
   "version": "0.4.2",
-  "description": "the cli portfolio of dave seidman",
+  "description": "a command-line chatbot about Dave Seidman",
   "main": "index.js",
   "bin": {
-    "seidman": "bin/seidman.js"
+    "whoisdave": "bin/whoisdave.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/DaveSeidman/seidman.git"
+    "url": "git+ssh://git@github.com/DaveSeidman/whoisdave.git"
   },
   "scripts": {
-    "start": "node bin/seidman.js",
-    "dev": "node bin/seidman.js --dev",
+    "start": "node bin/whoisdave.js",
+    "dev": "node bin/whoisdave.js --dev",
     "dev:watch": "node scripts/dev-watch.js",
     "postinstall": "node scripts/postinstall.js",
     "train": "cd modules/nlp && node train"
