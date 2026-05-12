@@ -278,6 +278,11 @@ class App {
       return;
     }
 
+    if (/\bmiddle\s*name\b/.test(normalized)) {
+      this.sayAndContinue(this.getAnswerForIntent('personal.middle-name-unknown', "I don't know Dave's middle name. It is not in the dataset yet."));
+      return;
+    }
+
     if (/\boutside (?:of )?work\b/.test(normalized)) {
       this.sayAndContinue(this.getAnswerForIntent('personal.hobbies', 'Outside of work, Dave likes fishing, beach volleyball, reading, the New York Times crossword, and Code and Bourbon.'));
       return;
