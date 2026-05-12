@@ -114,6 +114,22 @@ class App {
     return type.replace(/-/g, ' ');
   }
 
+  formatSingularProjectType(type) {
+    const singularTypes = {
+      apps: 'app',
+      holograms: 'hologram',
+      'live-events': 'live event',
+    };
+
+    return singularTypes[type] || this.formatProjectType(type);
+  }
+
+  formatProjectTypeWithArticle(type) {
+    const label = this.formatSingularProjectType(type);
+    const article = /^[aeiou]/i.test(label) ? 'an' : 'a';
+    return article + ' ' + label;
+  }
+
   hasControlInput(intent, normalized) {
     return this.controlInputs && this.controlInputs[intent] && this.controlInputs[intent].has(normalized);
   }
@@ -630,7 +646,7 @@ class App {
     }
 
     if (filteredProjects.length === 1) {
-      this.typewriter.typeSentence(`Okay, there is a ${this.formatProjectType(type)} project this bot can show you. `).then(() => {
+      this.typewriter.typeSentence(`Okay, there is ${this.formatProjectTypeWithArticle(type)} project this bot can show you. `).then(() => {
         this.openProject(filteredProjects[0]);
       });
       return;
