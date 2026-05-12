@@ -44,6 +44,8 @@ class App {
       answerQueues: {},
       lastAnswerByIntent: {},
       lastProjectResults: [],
+      lastOpenTarget: null,
+      openTargetHistory: [],
       awaitingProjectType: false,
       instantOutput: process.env.WHOISDAVE_INSTANT_OUTPUT === '1'
         || process.env.SEIDMAN_INSTANT_OUTPUT === '1'
@@ -255,6 +257,11 @@ class App {
       return;
     }
 
+    if (this.isOpenReferenceInput(normalized)) {
+      this.openRememberedTarget();
+      return;
+    }
+
     if (/\boutside (?:of )?work\b/.test(normalized)) {
       this.sayAndContinue(this.getAnswerForIntent('personal.hobbies', 'Outside of work, Dave likes fishing, beach volleyball, reading, the New York Times crossword, and Code and Bourbon.'));
       return;
@@ -304,6 +311,42 @@ class App {
   isProjectOverviewInput(normalized) {
     if (/\bwhere\b.*\bwork\b/.test(normalized)) return false;
     return /\b(project|projects|portfolio|working on|workin on|works on|worked on)\b/.test(normalized);
+  }
+
+  isOpenReferenceInput(normalized) {
+    return /^(?:open|show|launch|pull up|bring up|display)(?: it| that| this| that one| this one| the last one)?$/.test(normalized)
+      || /^(?:yes|yeah|yep|sure|ok|okay|fine|actually) (?:open|show|launch|pull up|bring up|display)(?: it| that| this| that one| this one| the last one)?$/.test(normalized);
+  }
+
+  rememberOpenTarget(label, url) {
+    const target = { label, url };
+    this.state.lastOpenTarget = target;
+    this.state.openTargetHistory = [
+      target,
+      ...this.state.openTargetHistory.filter(item => item.url !== url),
+    ].slice(0, 5);
+  }
+
+  openRememberedTarget() {
+    const target = this.state.lastOpenTarget || this.state.openTargetHistory[0];
+
+    if (target) {
+      this.openUrl(target.url);
+      this.sayAndContinue(`Opening ${target.label}.`);
+      return;
+    }
+
+    if (this.state.lastProjectResults.length === 1) {
+      this.openProject(this.state.lastProjectResults[0]);
+      return;
+    }
+
+    if (this.state.lastProjectResults.length > 1) {
+      this.ask('Which one should this bot open? Reply with a number from the list. ', this.handleUserAnswer);
+      return;
+    }
+
+    this.sayAndContinue('This bot does not have anything queued up to open yet. Ask for a project, resume, or portfolio first.');
   }
 
   continueChat(res) {
@@ -525,6 +568,11 @@ class App {
   }
 
 
+  openUrl(url) {
+    if (process.env.WHOISDAVE_SKIP_OPEN === '1') return;
+    open(url);
+  }
+
   resume() {
     this.promptToOpen("Dave's resume", 'https://daveseidman.com/resume.pdf');
   }
@@ -542,18 +590,24 @@ class App {
   }
 
   promptToOpen(label, url) {
+    this.rememberOpenTarget(label, url);
+
     const message = this.state.userName && Math.random() > 0.55
       ? `Would you like me to open ${label} in your browser, ${this.state.userName}? `
       : `Would you like me to open ${label} in your browser? `;
 
     this.ask(`${message}(y/n) `, (answer) => {
-      if (/^(y|yes|sure|ok|okay)$/i.test(answer.trim())) {
-        open(url);
+      if (this.isAffirmativeOpenAnswer(answer)) {
+        this.openUrl(url);
         this.sayAndContinue(`Opening ${label}.`);
       } else {
-        this.sayAndContinue('No problem.');
+        this.sayAndContinue('No problem. You can say "open it" if you change your mind.');
       }
     });
+  }
+
+  isAffirmativeOpenAnswer(answer) {
+    return /^(y|yes|yeah|yep|sure|ok|okay|fine|please|do it|open it|open that|open this)$/i.test(answer.trim());
   }
 
   showProjectTypes() {
