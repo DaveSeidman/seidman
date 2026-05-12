@@ -1,0 +1,16 @@
+{
+  "questions": [
+    "what is Dave's favorite bourbon?",
+    "what is his favorite bourbon?",
+    "what's Dave's favorite bourbon?",
+    "what's his favorite bourbon?",
+    "what is Dave's favorite coffee?",
+    "what is his favorite coffee?",
+    "what's Dave's favorite coffee?",
+    "what's his favorite coffee?"
+  ],
+  "answers": [
+    "The dataset says Dave likes coffee and bourbon, but it does not name a favorite yet.",
+    "Dave likes coffee and bourbon. Specific favorites are not documented here yet."
+  ]
+}

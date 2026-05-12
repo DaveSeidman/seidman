@@ -1,0 +1,23 @@
+{
+  "questions": [
+    "what scares Dave?",
+    "what scares him?",
+    "what makes Dave angry?",
+    "what makes him angry?",
+    "does Dave sleep?",
+    "does he sleep?",
+    "can Dave cook?",
+    "can he cook?",
+    "does Dave like dogs?",
+    "does he like dogs?",
+    "is Dave allergic to anything?",
+    "is he allergic to anything?",
+    "what is Dave's favorite fish?",
+    "what is his favorite fish?"
+  ],
+  "answers": [
+    "That detail is not in the dataset yet, so this bot should not guess.",
+    "The dataset does not have that personal detail yet. It has better coverage on Dave's work, projects, hobbies, and background.",
+    "Not documented yet. This is exactly the kind of fact Dave can add later if he wants the bot to answer it."
+  ]
+}

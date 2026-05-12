@@ -1,0 +1,23 @@
+{
+  "questions": [
+    "does Dave handle pressure?",
+    "does he handle pressure?",
+    "how does Dave handle stress?",
+    "how does he handle stress?",
+    "what is Dave like when things go wrong?",
+    "what is he like when things go wrong?",
+    "does Dave finish projects?",
+    "does he finish projects?",
+    "does Dave ship?",
+    "does he ship?",
+    "is Dave reliable under deadline?",
+    "is he reliable under deadline?",
+    "is Dave dependable under pressure?",
+    "is he dependable under pressure?"
+  ],
+  "answers": [
+    "The dataset says Dave is dependable, fast, figures out avenues quickly, executes on them, and tends to over-deliver. It does not include a specific pressure story yet.",
+    "Dave is described here as inventive, fast, dependable, and good at finding a path quickly. For a specific deadline story, the dataset still needs more detail.",
+    "The documented answer is that Dave ships: he can move from idea to prototype to execution, especially on small teams or solo. This bot should not invent a dramatic crisis story."
+  ]
+}

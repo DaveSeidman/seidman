@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "can Dave wire an Arduino?",
+    "can he wire an Arduino?",
+    "does Dave use Arduino?",
+    "does he use Arduino?",
+    "does Dave do hardware?",
+    "does he do hardware?",
+    "does Dave do physical computing?",
+    "does he do physical computing?",
+    "can Dave install a museum piece without it falling apart?",
+    "can he install a museum piece without it falling apart?",
+    "can Dave build museum installations?",
+    "can he build museum installations?"
+  ],
+  "answers": [
+    "Dave has a good base in physical computing and works on real-world museum installations. The dataset does not specifically claim Arduino expertise.",
+    "The documented answer is yes on physical computing and museum-installation work, with a caveat: Dave says he wants more regular practice with physical computing and 3D printing.",
+    "Dave works on interactive projects that have to run in real physical spaces. That is one of the more important parts of his current work at Local Projects."
+  ]
+}

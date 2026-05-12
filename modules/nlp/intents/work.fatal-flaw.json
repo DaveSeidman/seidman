@@ -1,0 +1,15 @@
+{
+  "questions": [
+    "what is Dave's fatal flaw?",
+    "what is his fatal flaw?",
+    "what's Dave's fatal flaw?",
+    "what's his fatal flaw?",
+    "what's Dave's biggest weakness?",
+    "what's his biggest weakness?"
+  ],
+  "answers": [
+    "Fatal flaw is too dramatic for the current dataset. The honest growth answer is that Dave wants more regular practice with physical computing and 3D printing.",
+    "The dataset does not document a fatal flaw. It does document growth areas: physical computing and 3D printing are things Dave wants to practice more regularly.",
+    "No fatal flaw is documented here. The closest useful answer is that Dave wants more reps in physical computing and 3D printing."
+  ]
+}

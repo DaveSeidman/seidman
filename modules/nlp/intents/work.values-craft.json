@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "is Dave ethical?",
+    "is he ethical?",
+    "will Dave cut corners?",
+    "will he cut corners?",
+    "does Dave care about users?",
+    "does he care about users?",
+    "does Dave care about beauty?",
+    "does he care about beauty?",
+    "does Dave care about craft?",
+    "does he care about craft?",
+    "does Dave care about design?",
+    "does he care about design?"
+  ],
+  "answers": [
+    "The dataset says Dave cares deeply about functionality, but also tries to make the apps and experiences he builds beautiful and elegant.",
+    "Dave cares about craft in both senses: the thing has to work, and it should feel beautiful and elegant if possible.",
+    "The strongest documented signal is the Plinko project: instead of faking the physics, Dave solved the real simulation problem. That says something about craft and technical honesty."
+  ]
+}

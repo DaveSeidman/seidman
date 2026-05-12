@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "does Dave argue with designers?",
+    "does he argue with designers?",
+    "how does Dave work with designers?",
+    "how does he work with designers?",
+    "does Dave communicate well?",
+    "does he communicate well?",
+    "can Dave explain technical things?",
+    "can he explain technical things?",
+    "can Dave work with creative teams?",
+    "can he work with creative teams?",
+    "how does Dave collaborate?",
+    "how does he collaborate?"
+  ],
+  "answers": [
+    "Dave works well with creative teams. The dataset specifically says he partnered with a VXD team as lead engineer on a complex installation.",
+    "The documented collaboration style is pragmatic: Dave is technical and creative, can partner with design teams, and can turn abstract ideas into working prototypes.",
+    "Dave seems strongest in small-team collaboration, especially where designers and technologists need to make something real together."
+  ]
+}

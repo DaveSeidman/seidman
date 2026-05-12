@@ -1,0 +1,20 @@
+{
+  "questions": [
+    "does Dave use TouchDesigner?",
+    "does he use TouchDesigner?",
+    "can Dave do TouchDesigner?",
+    "can he do TouchDesigner?",
+    "can Dave do Unreal?",
+    "can he do Unreal?",
+    "does Dave use Unreal?",
+    "does he use Unreal?",
+    "does Dave know Unity?",
+    "does he know Unity?",
+    "does Dave use Unity?",
+    "does he use Unity?"
+  ],
+  "answers": [
+    "That tool is not documented as one of Dave's strengths in this dataset. The named tools here are JavaScript, WebGL, Node.js, Three.js, Rapier, Blender/Cinema 4D pipelines, and some physical computing.",
+    "The dataset does not claim that as a core Dave tool. It does mention an existing Unity prototype on one project, but Dave rebuilt that experience fresh in web technology."
+  ]
+}

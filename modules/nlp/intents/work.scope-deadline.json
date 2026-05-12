@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "can Dave build this by Friday?",
+    "can he build this by Friday?",
+    "how fast can Dave build this?",
+    "how fast can he build this?",
+    "would Dave work for exposure?",
+    "would he work for exposure?",
+    "can Dave do this cheap?",
+    "can he do this cheap?",
+    "can Dave start tomorrow?",
+    "can he start tomorrow?"
+  ],
+  "answers": [
+    "This bot cannot commit Dave to scope, timing, or terms. It can say he is fast and dependable, but you should ask him directly about a real project.",
+    "For deadlines or terms, ask Dave directly. The dataset says he works quickly and tends to over-deliver, but it should not promise availability or pricing.",
+    "No commitment from the bot on timing or exposure. Dave is reachable at daveseidman@gmail.com if there is a real opportunity."
+  ]
+}

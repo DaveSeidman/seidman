@@ -1,0 +1,15 @@
+{
+  "questions": [
+    "what is Dave's superpower?",
+    "what is his superpower?",
+    "what's Dave's superpower?",
+    "what's his superpower?",
+    "what is Dave best at?",
+    "what is he best at?"
+  ],
+  "answers": [
+    "If Dave has a superpower in this dataset, it is turning strange, hard, real-world interactive ideas into working prototypes.",
+    "Dave is especially good at abstract thinking, rapid prototyping, and finding a path through problems that are hard to google.",
+    "The documented superpower is making impossible-looking interactive projects work in the real world."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "questions": [
+    "what should I not ask Dave to do?",
+    "what should we not ask Dave to do?",
+    "what kind of work would Dave hate?",
+    "what kind of work would he hate?",
+    "is Dave corporate?",
+    "is he corporate?",
+    "is Dave a startup guy?",
+    "is he a startup guy?",
+    "can Dave work remotely?",
+    "can he work remotely?",
+    "does Dave like meetings?",
+    "does he like meetings?"
+  ],
+  "answers": [
+    "The dataset does not define Dave's dislikes, remote-work preferences, or meeting preferences yet. It does say he works best on small teams or solo, especially on impossible-looking projects.",
+    "This bot should not guess about corporate, startup, remote, or meeting preferences. The documented fit is small teams or solo, with hard interactive work that needs fast prototyping.",
+    "Known fit: small teams, solo ownership, rapid prototyping, and magical-feeling interactive work. Unknown: whether Dave prefers corporate, startup, remote, or meeting-heavy environments."
+  ]
+}

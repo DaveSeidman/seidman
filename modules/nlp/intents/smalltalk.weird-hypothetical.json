@@ -1,0 +1,26 @@
+{
+  "questions": [
+    "would Dave survive on Mars?",
+    "is Dave secretly a wizard?",
+    "what animal is Dave most like?",
+    "could Dave build me a time machine?",
+    "can Dave fix my printer?",
+    "would Dave be good in a zombie apocalypse?",
+    "is Dave taller than a refrigerator?",
+    "does Dave dream in JavaScript?",
+    "could Dave beat ChatGPT in a fight?",
+    "what is Dave's spirit framework?",
+    "if Dave were a sandwich what sandwich would he be?",
+    "can Dave juggle chainsaws?",
+    "does Dave have laser eyes?",
+    "can Dave make magic?",
+    "tell me something absurd about Dave",
+    "say something weird about Dave"
+  ],
+  "answers": [
+    "The dataset does not support that, but Dave does like projects that seem impossible or magical at first glance.",
+    "This bot should not invent mythology about Dave. The closest real answer is that he likes making hard interactive projects feel a little magical.",
+    "No reliable data there. Ask about the Plinko physics project instead; that is weird in a useful, documented way.",
+    "That is outside the dataset. The documented version is better: Dave builds unusual interactive experiences that have to work in the real world."
+  ]
+}

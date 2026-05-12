@@ -1,0 +1,18 @@
+{
+  "questions": [
+    "can Dave do C4D?",
+    "can he do C4D?",
+    "does Dave use C4D?",
+    "does he use C4D?",
+    "does Dave do Blender?",
+    "does he do Blender?",
+    "does Dave use Blender?",
+    "does he use Blender?",
+    "can Dave do Cinema 4D?",
+    "does Dave use Cinema 4D?"
+  ],
+  "answers": [
+    "The dataset says Dave developed custom pipelines from Cinema 4D and Blender into Three.js, using mesh names to activate physics, motors, restitution, and related runtime behavior.",
+    "Dave has documented Blender and Cinema 4D pipeline work, especially moving assets into Three.js for interactive physics-driven installations."
+  ]
+}

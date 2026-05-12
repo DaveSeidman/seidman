@@ -1,0 +1,18 @@
+{
+  "questions": [
+    "has Dave ever failed?",
+    "has he ever failed?",
+    "tell me about a failure",
+    "tell me about Dave failing",
+    "tell me about a time Dave failed",
+    "what was Dave's biggest mistake?",
+    "what was his biggest mistake?",
+    "what mistake did Dave make?",
+    "what mistake did he make?"
+  ],
+  "answers": [
+    "The dataset does not include a specific failure story yet, so this bot should not invent one.",
+    "There is not a documented failure story in the dataset yet. A useful nearby answer is that Dave prefers solving the real technical problem instead of faking it, like on the Plinko physics project.",
+    "No specific failure story is documented yet. That would be a good interview-answer gap to fill next."
+  ]
+}
