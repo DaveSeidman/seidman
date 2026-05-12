@@ -490,7 +490,7 @@ class App {
   showProjectTypes() {
     this.state.awaitingProjectType = true;
     const message = `What kinds of projects would you like to see? ${this.projectList.join(', ')}`;
-    this.ask(message, this.handleUserAnswer, { instant: true });
+    this.ask(message, this.handleUserAnswer);
   }
 
   showProject(type) {
