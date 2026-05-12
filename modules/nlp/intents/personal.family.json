@@ -1,0 +1,33 @@
+{
+  "questions": [
+    "does Dave have a family?",
+    "does he have a family?",
+    "is Dave married?",
+    "is he married?",
+    "does Dave have kids?",
+    "does he have kids?",
+    "how many kids does Dave have?",
+    "how many kids does he have?",
+    "does Dave have pets?",
+    "does he have pets?",
+    "does Dave have a cat?",
+    "does he have a cat?",
+    "tell me about Dave's family",
+    "tell me about his family",
+    "how many children does Dave have?",
+    "how many children does he have?",
+    "does Dave have children?",
+    "does he have children?",
+    "does Dave have any kids?",
+    "does he have any kids?",
+    "does Dave have a pet?",
+    "does he have a pet?",
+    "what pets does Dave have?",
+    "what pets does he have?"
+  ],
+  "answers": [
+    "Dave is married and has three kids and one cat.",
+    "Dave has a pretty full house: he is married, has three kids, and has one cat.",
+    "Family-wise, Dave is married and has three kids and one cat."
+  ]
+}

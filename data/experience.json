@@ -6,14 +6,18 @@
       "topic": "work_experience",
       "facts": [
         "Dave has been a developer for over 20 years.",
-        "Dave has worked with over a dozen New York City digital agencies."
+        "Dave has worked with over a dozen New York City digital agencies.",
+        "Dave has a full-time job at Local Projects in Manhattan.",
+        "Dave does mostly museum installation design work.",
+        "Dave works on interactive projects in the real world.",
+        "Dave works on projects that become physical experiences for museum visitors."
       ],
       "answerVariants": {
         "short": [
-          "Dave has been doing this for over 20 years, mostly around interactive development, web work, and agency-driven projects."
+          "Dave works full-time at Local Projects in Manhattan, mostly on museum installation design and real-world interactive experiences."
         ],
         "medium": [
-          "Dave has been a developer for over 20 years and has worked with more than a dozen NYC digital agencies. A lot of his work sits where software, interaction, and weird technical constraints meet."
+          "Dave works full-time at Local Projects in Manhattan. A lot of his current work is museum installation design: interactive projects that have to run in the real world, in physical spaces, for real visitors."
         ]
       },
       "source": "existing intent: work.experience",
@@ -21,6 +25,12 @@
         "Which agencies or companies should be named?",
         "What roles or titles should be listed?",
         "What kind of work best represents the last 5 years?"
+      ],
+      "rawNotes": [
+        "I have one cat, three kids, a fulltime job at Local Projects in Manhattan. I do mostly museum installation design work, so a lot of interactive projects in the real world."
+      ],
+      "editedNotes": [
+        "Dave has a full-time job at Local Projects in Manhattan. He mostly does museum installation design work, which means many of his projects are interactive experiences in the real world."
       ]
     },
     {

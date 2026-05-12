@@ -6,11 +6,19 @@
     "Who have you worked for?",
     "Which agencies have you worked at?",
     "tell me your work experience",
-    "how long have you been a developer?"
+    "how long have you been a developer?",
+    "where is Dave working now?",
+    "where is he working now?",
+    "what is his current job?",
+    "what is Dave's current job?",
+    "what does he do for work now?",
+    "what does Dave do for work now?",
+    "tell me about his current work",
+    "tell me about Dave's current work"
   ],
   "answers": [
-    "Dave has worked with over a dozen NYC digital agencies.",
-    "Dave has been doing this for over 20 years.",
-    "Dave is very experienced in digital development."
+    "Dave works full-time at Local Projects in Manhattan.",
+    "Dave currently works at Local Projects in Manhattan, mostly on museum installation design and real-world interactive projects.",
+    "Dave has been doing this for over 20 years, and his current full-time job is at Local Projects in Manhattan."
   ]
 }

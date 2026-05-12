@@ -180,20 +180,25 @@
         "Dave likes to do the New York Times crossword.",
         "Dave listens to a lot of news stations.",
         "Dave prefers listening to Car Talk on NPR.",
-        "Dave eats everything."
+        "Dave eats everything.",
+        "Dave has three kids.",
+        "Dave has one cat.",
+        "Dave has a full-time job at Local Projects in Manhattan."
       ],
       "rawNotes": [
-        "dave is 5'5\" about 140 lbs, has a lot of gray hair, is in his 40's, loves to fish, lives in brooklyn, like coffee, bourbon, has a semi monthly coding meetup called \"code and bourbon\" (codeandbourbon.com), is married and has a lot of young kids. Likes to do the NYT crossword. Listens to a lot of news stations but prefers to listen to CarTalk on NPR. He eats everything."
+        "dave is 5'5\" about 140 lbs, has a lot of gray hair, is in his 40's, loves to fish, lives in brooklyn, like coffee, bourbon, has a semi monthly coding meetup called \"code and bourbon\" (codeandbourbon.com), is married and has a lot of young kids. Likes to do the NYT crossword. Listens to a lot of news stations but prefers to listen to CarTalk on NPR. He eats everything.",
+        "I have one cat, three kids, a fulltime job at Local Projects in Manhattan."
       ],
       "editedNotes": [
-        "Dave is 5'5\", about 140 pounds, has a lot of gray hair, and is in his 40s. He lives in Brooklyn, is married, and has a lot of young kids. He loves to fish, likes coffee and bourbon, and runs a semi-monthly coding meetup called Code and Bourbon at codeandbourbon.com. He likes doing the New York Times crossword, listens to a lot of news stations, but prefers listening to Car Talk on NPR. He eats everything."
+        "Dave is 5'5\", about 140 pounds, has a lot of gray hair, and is in his 40s. He lives in Brooklyn, is married, and has a lot of young kids. He loves to fish, likes coffee and bourbon, and runs a semi-monthly coding meetup called Code and Bourbon at codeandbourbon.com. He likes doing the New York Times crossword, listens to a lot of news stations, but prefers listening to Car Talk on NPR. He eats everything.",
+        "Dave has one cat, three kids, and a full-time job at Local Projects in Manhattan."
       ],
       "answerVariants": {
         "short": [
-          "Dave lives in Brooklyn, is married, has a lot of young kids, likes coffee and bourbon, loves fishing, and does the New York Times crossword."
+          "Dave lives in Brooklyn, is married, has three kids and one cat, likes coffee and bourbon, loves fishing, and does the New York Times crossword."
         ],
         "medium": [
-          "Dave lives in Brooklyn, is married, and has a lot of young kids. He is in his 40s, has a lot of gray hair, loves to fish, likes coffee and bourbon, and runs a semi-monthly coding meetup called Code and Bourbon. He also likes the New York Times crossword, listens to a lot of news, prefers Car Talk on NPR, and eats everything."
+          "Dave lives in Brooklyn, is married, and has three kids and one cat. He is in his 40s, has a lot of gray hair, loves to fish, likes coffee and bourbon, and runs a semi-monthly coding meetup called Code and Bourbon. He also likes the New York Times crossword, listens to a lot of news, prefers Car Talk on NPR, and eats everything."
         ]
       },
       "visibility": "personal",

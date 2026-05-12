@@ -15,11 +15,21 @@
     "what is Dave's career?",
     "what kind of work do you do?",
     "what kind of engineer is Dave?",
-    "what kind of engineer are you?"
+    "what kind of engineer are you?",
+    "where does Dave work?",
+    "where does he work?",
+    "where do you work?",
+    "what is Dave working on now?",
+    "what does Dave work on now?",
+    "what kind of work does Dave do now?",
+    "does Dave work on museum installations?",
+    "does he work on museum installations?",
+    "what does Dave do at Local Projects?",
+    "what does he do at Local Projects?"
   ],
   "answers": [
-    "Dave is a creative engineer who builds interactive apps and experiences. He is especially good at the problems you cannot just google your way through.",
-    "Dave builds interactive software, installations, and experiences. His sweet spot is the weird, ambiguous work where there is not an obvious answer online.",
-    "Professionally, Dave is a creative engineer. He works across web, interaction, physical computing, and experiential projects."
+    "Dave works full-time at Local Projects in Manhattan, mostly on museum installation design and interactive projects in the real world.",
+    "Professionally, Dave is a creative engineer. These days he works full-time at Local Projects in Manhattan, where a lot of his work is museum installation design and real-world interactive experiences.",
+    "Dave builds interactive software, installations, and experiences. His current full-time work is at Local Projects in Manhattan, with a lot of museum-focused installation design."
   ]
 }

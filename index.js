@@ -259,6 +259,11 @@ class App {
       return;
     }
 
+    if (/\b(local projects|museum|museums|installation|installations|manhattan)\b/.test(normalized)) {
+      this.sayAndContinue(this.getAnswerForIntent('work.profession', 'Dave works full-time at Local Projects in Manhattan, mostly on museum installation design and real-world interactive projects.'));
+      return;
+    }
+
     const selectedProject = this.findProjectSelection(normalized);
     if (selectedProject) {
       this.openProject(selectedProject);
@@ -286,7 +291,8 @@ class App {
   }
 
   isProjectOverviewInput(normalized) {
-    return /\b(project|projects|portfolio|work|working on|workin on|works on|worked on)\b/.test(normalized);
+    if (/\bwhere\b.*\bwork\b/.test(normalized)) return false;
+    return /\b(project|projects|portfolio|working on|workin on|works on|worked on)\b/.test(normalized);
   }
 
   continueChat(res) {
