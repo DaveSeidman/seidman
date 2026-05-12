@@ -1,0 +1,17 @@
+{
+  "questions": [
+    "what kind of team does Dave work best on?",
+    "what kind of team does he work best on?",
+    "does Dave like small teams?",
+    "does he like small teams?",
+    "does Dave work well solo?",
+    "does he work well solo?",
+    "what team size does Dave prefer?",
+    "what team size does he prefer?"
+  ],
+  "answers": [
+    "Dave works best on small teams or solo.",
+    "Dave tends to work best on small teams or solo, especially when the work needs quick movement from idea to prototype to execution.",
+    "Small teams or solo work tend to suit Dave best."
+  ]
+}

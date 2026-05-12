@@ -25,11 +25,22 @@
     "does Dave work on museum installations?",
     "does he work on museum installations?",
     "what does Dave do at Local Projects?",
-    "what does he do at Local Projects?"
+    "what does he do at Local Projects?",
+    "what is Dave current role?",
+    "what is Dave's current role?",
+    "what is his current role?",
+    "what is Dave role?",
+    "what is Dave's role?",
+    "what is his role?",
+    "is Dave a senior creative technologist?",
+    "is he a senior creative technologist?",
+    "what does Dave prototype?",
+    "does Dave do rapid prototyping?",
+    "does he do rapid prototyping?"
   ],
   "answers": [
-    "Dave works full-time at Local Projects in Manhattan, mostly on museum installation design and interactive projects in the real world.",
-    "Professionally, Dave is a creative engineer. These days he works full-time at Local Projects in Manhattan, where a lot of his work is museum installation design and real-world interactive experiences.",
-    "Dave builds interactive software, installations, and experiences. His current full-time work is at Local Projects in Manhattan, with a lot of museum-focused installation design."
+    "Dave is a Senior Creative Technologist at Local Projects in Manhattan. He works on rapid prototyping, museum installation design, and interactive projects in the real world.",
+    "Professionally, Dave is a Senior Creative Technologist. These days he works full-time at Local Projects in Manhattan, where a lot of his work is rapid prototyping for museum installation design and real-world interactive experiences.",
+    "Dave builds interactive software, installations, and experiences. His current role is Senior Creative Technologist at Local Projects in Manhattan."
   ]
 }

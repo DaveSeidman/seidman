@@ -40,6 +40,7 @@ class App {
       successfulInteractions: 0,
       userName: null,
       justLearnedName: false,
+      lastNamePromptAt: 0,
       answerQueues: {},
       lastAnswerByIntent: {},
       lastProjectResults: [],
@@ -259,6 +260,11 @@ class App {
       return;
     }
 
+    if (/\b(museum|museums|installation|installations)\b/.test(normalized) && /\b(proud|projects|worked on|work)\b/.test(normalized)) {
+      this.sayAndContinue(this.getAnswerForIntent('work.proud-projects', 'Some museum installation projects Dave is proud of include The Waterways of Change in Buffalo, The Shockoe Institute in Virginia, and the National Urban League in Harlem.'));
+      return;
+    }
+
     if (/\b(local projects|museum|museums|installation|installations|manhattan)\b/.test(normalized)) {
       this.sayAndContinue(this.getAnswerForIntent('work.profession', 'Dave works full-time at Local Projects in Manhattan, mostly on museum installation design and real-world interactive projects.'));
       return;
@@ -316,6 +322,7 @@ class App {
         this.state.successfulInteractions += 1;
         const answer = this.getAnswerForIntent(res.intent, res.answer);
         const shouldAskName = this.shouldAskForName();
+        if (shouldAskName) this.state.lastNamePromptAt = this.state.successfulInteractions;
 
         message = shouldAskName
           ? `${answer.trim()}\n\n${this.getNamePrompt()} `
@@ -417,7 +424,10 @@ class App {
   }
 
   shouldAskForName() {
-    return !this.state.userName && this.state.successfulInteractions > 0 && this.state.successfulInteractions % 4 === 0;
+    return !this.state.userName
+      && this.state.successfulInteractions > 0
+      && this.state.successfulInteractions % 4 === 0
+      && this.state.lastNamePromptAt !== this.state.successfulInteractions;
   }
 
   getNamePrompt() {
@@ -428,6 +438,11 @@ class App {
     ];
 
     return prompts[Math.floor(Math.random() * prompts.length)];
+  }
+
+  isLikelyQuestion(answer) {
+    const normalized = this.normalizeInput(answer);
+    return answer.includes('?') || /^(what|whats|where|when|why|how|who|does|do|is|are|can|could|would|should|tell|show|list)\b/.test(normalized);
   }
 
   parseName(answer) {
@@ -442,6 +457,11 @@ class App {
   }
 
   handleNameAnswer(answer) {
+    if (this.isLikelyQuestion(answer)) {
+      this.handleUserAnswer(answer);
+      return;
+    }
+
     const name = this.parseName(answer);
 
     if (!name) {

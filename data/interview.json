@@ -4,9 +4,23 @@
       "id": "interview.why-hire",
       "status": "draft",
       "topic": "interview",
-      "prompt": "Why should someone hire you?",
-      "notes": [],
-      "answerVariants": {}
+      "prompt": "Why should someone hire Dave?",
+      "notes": [
+        "Dave suggests asking agencies, teams, and individuals he has worked with.",
+        "Dave wants reputation and references to carry weight."
+      ],
+      "answerVariants": {
+        "short": [
+          "Ask around first with the agencies, teams, and individuals Dave has worked with."
+        ],
+        "medium": [
+          "The best answer is probably to ask around first with the agencies, teams, and individuals Dave has worked with. Dave wants his reputation with past collaborators to speak clearly."
+        ]
+      },
+      "rawNotes": [
+        "Ask around first with the agencies, teams and individuals he's worked with."
+      ],
+      "source": "2026-05-12 chat"
     },
     {
       "id": "interview.strengths",
@@ -54,6 +68,53 @@
       "prompt": "What should a manager know about working with you?",
       "notes": [],
       "answerVariants": {}
+    },
+    {
+      "id": "interview.work-style",
+      "status": "draft",
+      "topic": "interview",
+      "prompt": "What should an interviewer understand about Dave's work style?",
+      "notes": [
+        "Dave is inventive.",
+        "Dave is fast.",
+        "Dave figures out avenues quickly.",
+        "Dave can execute on the avenues he finds.",
+        "Dave is dependable.",
+        "Dave over-delivers."
+      ],
+      "rawNotes": [
+        "That Dave is inventive, fast, figures out avenues quickly, can execute on them, is dependable, over-delivers."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave is inventive, fast, dependable, and tends to over-deliver."
+        ],
+        "medium": [
+          "An interviewer should understand that Dave is inventive and fast. He figures out possible avenues quickly, can execute on them, is dependable, and tends to over-deliver."
+        ]
+      },
+      "source": "2026-05-12 chat"
+    },
+    {
+      "id": "interview.team-style",
+      "status": "draft",
+      "topic": "interview",
+      "prompt": "What kind of team does Dave work best on?",
+      "notes": [
+        "Dave works best on small teams or solo."
+      ],
+      "rawNotes": [
+        "Small teams or Solo."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave works best on small teams or solo."
+        ],
+        "medium": [
+          "Dave tends to work best on small teams or solo, especially when there is room to move quickly from idea to prototype to execution."
+        ]
+      },
+      "source": "2026-05-12 chat"
     }
   ]
 }

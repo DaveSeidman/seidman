@@ -10,14 +10,17 @@
         "Dave has a full-time job at Local Projects in Manhattan.",
         "Dave does mostly museum installation design work.",
         "Dave works on interactive projects in the real world.",
-        "Dave works on projects that become physical experiences for museum visitors."
+        "Dave works on projects that become physical experiences for museum visitors.",
+        "Dave is a Senior Creative Technologist.",
+        "Dave works on rapid prototyping.",
+        "Dave works best on impossible-looking or magical-feeling projects."
       ],
       "answerVariants": {
         "short": [
-          "Dave works full-time at Local Projects in Manhattan, mostly on museum installation design and real-world interactive experiences."
+          "Dave is a Senior Creative Technologist at Local Projects in Manhattan, where he works on rapid prototypes, museum installation design, and real-world interactive experiences."
         ],
         "medium": [
-          "Dave works full-time at Local Projects in Manhattan. A lot of his current work is museum installation design: interactive projects that have to run in the real world, in physical spaces, for real visitors."
+          "Dave is a Senior Creative Technologist at Local Projects in Manhattan. A lot of his current work is rapid prototyping for museum installations: interactive projects that have to run in the real world, in physical spaces, for real visitors."
         ]
       },
       "source": "existing intent: work.experience",
@@ -27,10 +30,14 @@
         "What kind of work best represents the last 5 years?"
       ],
       "rawNotes": [
-        "I have one cat, three kids, a fulltime job at Local Projects in Manhattan. I do mostly museum installation design work, so a lot of interactive projects in the real world."
+        "I have one cat, three kids, a fulltime job at Local Projects in Manhattan. I do mostly museum installation design work, so a lot of interactive projects in the real world.",
+        "Dave is a Senior Creative Technologist, he works on rapid prototyping.",
+        "The ones that seem impossible or magic at first glance."
       ],
       "editedNotes": [
-        "Dave has a full-time job at Local Projects in Manhattan. He mostly does museum installation design work, which means many of his projects are interactive experiences in the real world."
+        "Dave has a full-time job at Local Projects in Manhattan. He mostly does museum installation design work, which means many of his projects are interactive experiences in the real world.",
+        "Dave is a Senior Creative Technologist who works on rapid prototyping.",
+        "Dave is drawn to projects that seem impossible or magical at first glance."
       ]
     },
     {
@@ -42,14 +49,17 @@
         "Dave has used Python.",
         "Dave has used C#.",
         "Dave has used WebGL.",
-        "Dave has used Node.js."
+        "Dave has used Node.js.",
+        "Dave has strong JavaScript knowledge.",
+        "Dave has strong WebGL knowledge.",
+        "Dave sees his JavaScript and WebGL knowledge as major assets."
       ],
       "answerVariants": {
         "short": [
-          "Mostly JavaScript and Node.js, with WebGL, Python, and C# when the project calls for it."
+          "Dave is especially strong in JavaScript and WebGL."
         ],
         "medium": [
-          "Most of Dave's day-to-day work has been JavaScript and Node.js. He has also used WebGL, Python, C#, and whatever else made sense for the project."
+          "Dave has a strong JavaScript and WebGL base, and those are major assets in his current work. He also uses Node.js and whatever else the project needs."
         ]
       },
       "source": "existing intent: work.languages",
@@ -57,6 +67,12 @@
         "Which frameworks should be named?",
         "Which languages are current strengths versus past-use tools?",
         "What technical areas should interviewers associate with you?"
+      ],
+      "rawNotes": [
+        "My strong knowledge of javascript and webgl are great assets."
+      ],
+      "editedNotes": [
+        "Dave sees his strong JavaScript and WebGL knowledge as major assets."
       ]
     },
     {
@@ -66,14 +82,27 @@
       "facts": [
         "Dave frequently attends conferences.",
         "Dave frequently attends meetups.",
-        "Dave attends conferences and meetups to stay sharp."
+        "Dave attends conferences and meetups to stay sharp.",
+        "Dave has a good base in physical computing.",
+        "Dave probably has more physical computing experience than most software engineers.",
+        "Dave wants to improve his physical computing skills through more regular practice.",
+        "Dave wants to improve his 3D printing skills through more regular practice."
       ],
       "answerVariants": {
         "short": [
           "Dave frequently attends conferences and meetups to stay sharp."
+        ],
+        "medium": [
+          "Dave has a good base in physical computing, probably more than most software engineers, but he wants to practice it more regularly. The same goes for 3D printing."
         ]
       },
-      "source": "2026-05-11 chat"
+      "source": "2026-05-11 chat",
+      "rawNotes": [
+        "I have a good base in physical computing, probably a lot more than most software engineers however I'd like to improve those skills and practice them more regularly. The same goes for 3D printing."
+      ],
+      "editedNotes": [
+        "Dave has a good base in physical computing, probably more than most software engineers, but he wants to practice it more regularly. The same is true for 3D printing."
+      ]
     },
     {
       "id": "experience.loves-coding",
@@ -88,6 +117,61 @@
         ]
       },
       "source": "2026-05-11 chat"
+    },
+    {
+      "id": "experience.work-style",
+      "status": "draft",
+      "topic": "work_style",
+      "facts": [
+        "Dave is inventive.",
+        "Dave works quickly.",
+        "Dave figures out avenues quickly.",
+        "Dave can execute on the avenues he finds.",
+        "Dave is dependable.",
+        "Dave over-delivers.",
+        "Dave works best on small teams or solo."
+      ],
+      "rawNotes": [
+        "That Dave is inventive, fast, figures out avenues quickly, can execute on them, is dependable, over-delivers.",
+        "Small teams or Solo."
+      ],
+      "editedNotes": [
+        "Dave is inventive, fast, dependable, and good at finding a path quickly and executing on it. He tends to over-deliver.",
+        "Dave works best on small teams or solo."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave is inventive, fast, dependable, and good at finding a path quickly and executing on it."
+        ],
+        "medium": [
+          "Dave is inventive and fast. He figures out possible avenues quickly, can execute on them, is dependable, and tends to over-deliver. He usually works best on small teams or solo."
+        ]
+      },
+      "source": "2026-05-12 chat"
+    },
+    {
+      "id": "experience.ideal-projects",
+      "status": "draft",
+      "topic": "ideal_projects",
+      "facts": [
+        "Dave is most excited by projects that seem impossible at first glance.",
+        "Dave is most excited by projects that feel magical at first glance."
+      ],
+      "rawNotes": [
+        "The ones that seem impossible or magic at first glance."
+      ],
+      "editedNotes": [
+        "Dave is most excited by projects that seem impossible or magical at first glance."
+      ],
+      "answerVariants": {
+        "short": [
+          "Dave is excited by projects that seem impossible or magical at first glance."
+        ],
+        "medium": [
+          "The fastest way to interest Dave is to show him a project that seems impossible or magical at first glance, especially if it needs rapid prototyping and real execution to prove it can work."
+        ]
+      },
+      "source": "2026-05-12 chat"
     }
   ]
 }

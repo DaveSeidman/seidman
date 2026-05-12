@@ -1,0 +1,20 @@
+{
+  "questions": [
+    "what is Dave like to work with?",
+    "what is he like to work with?",
+    "what is Dave's work style?",
+    "what is his work style?",
+    "how does Dave work?",
+    "how does he work?",
+    "is Dave dependable?",
+    "does Dave over deliver?",
+    "does he over deliver?",
+    "what should an interviewer know about Dave?",
+    "what should an interviewer understand about Dave?"
+  ],
+  "answers": [
+    "Dave is inventive, fast, dependable, and good at finding a path quickly and executing on it.",
+    "Dave figures out possible avenues quickly, can execute on them, and tends to over-deliver.",
+    "Dave works well when he can move quickly from idea to prototype to execution. He is dependable and tends to over-deliver."
+  ]
+}

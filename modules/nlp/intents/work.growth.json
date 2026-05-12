@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "what is Dave trying to improve?",
+    "what is he trying to improve?",
+    "what does Dave want to get better at?",
+    "what does he want to get better at?",
+    "is Dave learning physical computing?",
+    "is he learning physical computing?",
+    "is Dave learning 3D printing?",
+    "is he learning 3D printing?",
+    "what skills is Dave building?",
+    "what skills is he building?"
+  ],
+  "answers": [
+    "Dave has a good base in physical computing, probably more than most software engineers, but he wants to practice it more regularly. The same goes for 3D printing.",
+    "Dave wants to get sharper at physical computing and 3D printing through more regular practice.",
+    "Physical computing and 3D printing are areas where Dave already has a base, but wants more regular reps."
+  ]
+}
