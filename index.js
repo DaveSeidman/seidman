@@ -41,6 +41,8 @@ class App {
       userName: null,
       answerQueues: {},
       lastAnswerByIntent: {},
+      lastProjectResults: [],
+      awaitingProjectType: false,
       instantOutput: process.env.WHOISDAVE_INSTANT_OUTPUT === '1'
         || process.env.SEIDMAN_INSTANT_OUTPUT === '1'
         || (!process.env.WHOISDAVE_ALLOW_NON_TTY && !process.env.SEIDMAN_ALLOW_NON_TTY && (!process.stdin.isTTY || !process.stdout.isTTY)),
@@ -64,7 +66,9 @@ class App {
     fs.readdir(path.join(__dirname, 'modules/nlp/intents'), (err, files) => {
       this.answerBank = this.loadAnswerBank(files);
       this.controlInputs = this.loadControlInputs(files);
-      this.projectList = files.filter(file => file.split('.')[0] === 'projects').map(file => file.split('.')[1].replace('-', ' '));
+      this.projectTypeAliases = this.loadProjectTypeAliases(files);
+      this.projectLookup = this.loadProjectLookup();
+      this.projectList = this.projectTypeAliases.map(projectType => this.formatProjectType(projectType.type));
       // this.intro();
       this.start();
     });
@@ -102,8 +106,107 @@ class App {
     return input.trim().toLowerCase().replace(/[^\w\s']/g, '').replace(/\s+/g, ' ');
   }
 
+  formatProjectType(type) {
+    return type.replace(/-/g, ' ');
+  }
+
   hasControlInput(intent, normalized) {
     return this.controlInputs && this.controlInputs[intent] && this.controlInputs[intent].has(normalized);
+  }
+
+  loadProjectTypeAliases(files) {
+    return files
+      .filter(file => file.startsWith('projects.'))
+      .map((file) => {
+        const intentType = file.replace('projects.', '').replace('.json', '');
+        const intentPath = path.join(__dirname, 'modules/nlp/intents', file);
+        const data = JSON.parse(fs.readFileSync(intentPath, 'utf8'));
+        const canonicalType = this.getCanonicalProjectType(intentType, data);
+        const aliases = [
+          intentType,
+          intentType.replace(/-/g, ' '),
+          canonicalType,
+          canonicalType.replace(/-/g, ' '),
+          ...(data.questions || []),
+          ...(data.answers || []),
+        ];
+
+        return {
+          type: canonicalType,
+          aliases: new Set(aliases.map(alias => this.normalizeInput(alias)).filter(Boolean)),
+        };
+      });
+  }
+
+  getCanonicalProjectType(intentType, data) {
+    const knownTypes = new Set(projects.flatMap(project => project.type));
+    if (knownTypes.has(intentType)) return intentType;
+
+    const answerType = (data.answers || []).find(answer => knownTypes.has(answer));
+    if (answerType) return answerType;
+
+    return intentType;
+  }
+
+  loadProjectLookup() {
+    return projects.map((project) => {
+      const aliases = [
+        project.name,
+        project.value,
+        project.value.replace(/-/g, ' '),
+      ];
+      const normalizedName = this.normalizeInput(project.name);
+      if (normalizedName.startsWith('the ')) aliases.push(normalizedName.replace(/^the /, ''));
+
+      return {
+        project,
+        aliases: new Set(aliases.map(alias => this.normalizeInput(alias)).filter(Boolean)),
+      };
+    });
+  }
+
+  findProjectType(normalized) {
+    const projectish = this.state.awaitingProjectType || /\b(project|projects|portfolio|work|show|see)\b/.test(normalized);
+
+    if (projectish && /\bckend\b/.test(normalized)) return 'backend';
+
+    for (const projectType of this.projectTypeAliases || []) {
+      for (const alias of projectType.aliases) {
+        if (normalized === alias) return projectType.type;
+        if (projectish && alias.length > 2 && normalized.includes(alias)) return projectType.type;
+        if (projectish && alias.length <= 2 && new RegExp(`\\b${alias}\\b`).test(normalized)) return projectType.type;
+      }
+    }
+
+    return null;
+  }
+
+  findProjectSelection(normalized) {
+    const match = normalized.match(/^(?:show me |open |see )?(\d+)$/);
+    if (!match || !this.state.lastProjectResults.length) return null;
+
+    const index = Number(match[1]) - 1;
+    if (index < 0 || index >= this.state.lastProjectResults.length) return null;
+    return this.state.lastProjectResults[index];
+  }
+
+  findProjectByName(normalized) {
+    const projectish = this.state.awaitingProjectType || /\b(project|projects|show|see|open|tell me about)\b/.test(normalized);
+
+    for (const item of this.projectLookup || []) {
+      for (const alias of item.aliases) {
+        if (normalized === alias) return item.project;
+        if ((projectish || alias.split(' ').length > 1) && alias.length > 2 && normalized.includes(alias)) return item.project;
+      }
+    }
+
+    return null;
+  }
+
+  openProject(project) {
+    this.state.awaitingProjectType = false;
+    this.state.lastProjectResults = [project];
+    this.promptToOpen(project.name, `https://daveseidman.com/${project.value}`);
   }
 
   start() {
@@ -150,10 +253,47 @@ class App {
       return;
     }
 
+    if (/\boutside of work\b/.test(normalized)) {
+      this.sayAndContinue(this.getAnswerForIntent('personal.hobbies', 'Outside of work, Dave likes fishing, beach volleyball, reading, the New York Times crossword, and Code and Bourbon.'));
+      return;
+    }
+
+    const selectedProject = this.findProjectSelection(normalized);
+    if (selectedProject) {
+      this.openProject(selectedProject);
+      return;
+    }
+
+    const namedProject = this.findProjectByName(normalized);
+    if (namedProject) {
+      this.openProject(namedProject);
+      return;
+    }
+
+    const projectType = this.findProjectType(normalized);
+    if (projectType) {
+      this.showProject(projectType);
+      return;
+    }
+
+    if (this.isProjectOverviewInput(normalized)) {
+      this.showProjectTypes();
+      return;
+    }
+
     this.manager.process('en', answer, this.context).then(this.continueChat);
   }
 
+  isProjectOverviewInput(normalized) {
+    return /\b(project|projects|portfolio|work|works on|worked on)\b/.test(normalized);
+  }
+
   continueChat(res) {
+    if (res && res.intent.split('.')[0] === 'projects') {
+      const projectType = this.findProjectType(res.intent.split('.')[1]) || res.intent.split('.')[1];
+      return this.showProject(projectType);
+    }
+
     // check for action intent:
     if (res && res.intent.split('.')[0] === 'action') {
       return this[res.intent.split('.')[1]]();
@@ -323,7 +463,7 @@ class App {
 
 
   resume() {
-    this.promptToOpen("Dave's resume", 'https://daveseidman.com/resume');
+    this.promptToOpen("Dave's resume", 'https://daveseidman.com/resume.pdf');
   }
 
   openResume() {
@@ -348,36 +488,32 @@ class App {
   }
 
   showProjectTypes() {
+    this.state.awaitingProjectType = true;
     const message = `What kinds of projects would you like to see? ${this.projectList.join(', ')}`;
-    this.ask(message, (answer) => {
-      this.manager.process('en', answer, this.context).then((res) => {
-        if (res.intent.split('.')[0] === 'projects') {
-          this.showProject(res.intent.split('.')[1]);
-        } else {
-          this.showProjectTypes();
-        }
-      });
-    });
+    this.ask(message, this.handleUserAnswer, { instant: true });
   }
 
   showProject(type) {
     const filteredProjects = projects.filter(project => project.type.indexOf(type) >= 0);
+    this.state.awaitingProjectType = false;
+    this.state.lastProjectResults = filteredProjects;
+
     if (filteredProjects.length === 0) {
-      this.typewriter.typeSentence(`Sorry, there are not any ${type} projects to share at the moment`).then(this.showProjectTypes);
+      this.typewriter.typeSentence(`Sorry, there are not any ${this.formatProjectType(type)} projects to share at the moment`).then(this.showProjectTypes);
+      return;
     }
+
     if (filteredProjects.length === 1) {
-      this.typewriter.typeSentence(`Okay, there is a ${type} project this bot can show you. `).then(() => {
-        this.promptToOpen(filteredProjects[0].name, `https://daveseidman.com/${filteredProjects[0].value}`);
+      this.typewriter.typeSentence(`Okay, there is a ${this.formatProjectType(type)} project this bot can show you. `).then(() => {
+        this.openProject(filteredProjects[0]);
       });
+      return;
     }
-    if (filteredProjects.length > 1) {
-      const projectList = filteredProjects
-        .map((project, index) => `${index + 1}) ${project.name}: ${project.desc}`)
-        .join('\n');
-      this.sayAndContinue(`Okay, here are some of Dave's ${type} projects:\n${projectList}`);
-    }
-    // console.log(`okay, show Dave's ${type} Projects`);
-    // console.log(filteredProjects);
+
+    const projectList = filteredProjects
+      .map((project, index) => `${index + 1}) ${project.name}: ${project.desc}`)
+      .join('\n');
+    this.sayAndContinue(`Okay, here are some of Dave's ${this.formatProjectType(type)} projects:\n${projectList}`);
   }
 
   contact() {
@@ -389,9 +525,13 @@ class App {
     this.typewriter.typeSentence(`${message.trim()}\n\n`).then(this.continueChat);
   }
 
-  ask(message, callback) {
+  ask(message, callback, options = {}) {
     process.stdout.write(fontBot);
-    this.typewriter.typeSentence(message).then(() => {
+    const writeMessage = options.instant
+      ? Promise.resolve(process.stdout.write(message))
+      : this.typewriter.typeSentence(message);
+
+    writeMessage.then(() => {
       if (this.rl.closed) return;
       process.stdout.write(`\n${fontUser}> `);
       if (!this.rl.closed) this.rl.resume();
