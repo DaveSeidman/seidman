@@ -39,6 +39,7 @@ class App {
       fallbackCount: 0,
       successfulInteractions: 0,
       userName: null,
+      justLearnedName: false,
       answerQueues: {},
       lastAnswerByIntent: {},
       lastProjectResults: [],
@@ -285,7 +286,7 @@ class App {
   }
 
   isProjectOverviewInput(normalized) {
-    return /\b(project|projects|portfolio|work|works on|worked on)\b/.test(normalized);
+    return /\b(project|projects|portfolio|work|working on|workin on|works on|worked on)\b/.test(normalized);
   }
 
   continueChat(res) {
@@ -366,6 +367,11 @@ class App {
   }
 
   getContinueMessage() {
+    if (this.state.justLearnedName && this.state.userName) {
+      this.state.justLearnedName = false;
+      return `What else can I help with, ${this.state.userName}?`;
+    }
+
     const continueTextOptions = [
       "What else do you want to know?",
       "Ask me another question",
@@ -377,7 +383,16 @@ class App {
       "Is there something else you'd like to know?"
     ];
 
-    return (continueTextOptions[Math.floor(Math.random() * continueTextOptions.length)]);
+    const namedOptions = this.state.userName ? [
+      `What else do you want to know, ${this.state.userName}?`,
+      `What else can I help with, ${this.state.userName}?`,
+      `Anything else about Dave, ${this.state.userName}?`,
+    ] : [];
+    const options = namedOptions.length && Math.random() > 0.55
+      ? namedOptions
+      : continueTextOptions;
+
+    return (options[Math.floor(Math.random() * options.length)]);
   }
 
   getFallbackMessage() {
@@ -387,6 +402,10 @@ class App {
       "What's that?",
       'Can you try rephrasing that?',
     ];
+
+    if (this.state.userName && Math.random() > 0.6) {
+      fallbackOptions.push(`Sorry, ${this.state.userName}, I missed that. Can you try rephrasing?`);
+    }
 
     return (fallbackOptions[Math.floor(Math.random() * fallbackOptions.length)]);
   }
@@ -425,6 +444,7 @@ class App {
     }
 
     this.state.userName = name;
+    this.state.justLearnedName = true;
     this.sayAndContinue(`Nice to meet you, ${name}.`);
   }
 
@@ -475,7 +495,9 @@ class App {
   }
 
   promptToOpen(label, url) {
-    const message = `Would you like me to open ${label} in your browser? `;
+    const message = this.state.userName && Math.random() > 0.55
+      ? `Would you like me to open ${label} in your browser, ${this.state.userName}? `
+      : `Would you like me to open ${label} in your browser? `;
 
     this.ask(`${message}(y/n) `, (answer) => {
       if (/^(y|yes|sure|ok|okay)$/i.test(answer.trim())) {
@@ -489,7 +511,10 @@ class App {
 
   showProjectTypes() {
     this.state.awaitingProjectType = true;
-    const message = `What kinds of projects would you like to see? ${this.projectList.join(', ')}`;
+    const prefix = this.state.userName && Math.random() > 0.55
+      ? `What kinds of projects would you like to see, ${this.state.userName}?`
+      : 'What kinds of projects would you like to see?';
+    const message = `${prefix} ${this.projectList.join(', ')}`;
     this.ask(message, this.handleUserAnswer);
   }
 
