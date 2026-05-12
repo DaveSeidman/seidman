@@ -1,4 +1,4 @@
-# Who Is Dave
+# whoisdave
 
 A command-line chatbot about Dave Seidman.
 

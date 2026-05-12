@@ -4,12 +4,36 @@
     "bye take care",
     "see you later",
     "bye for now",
-    "i must go"
+    "i must go",
+    "bye",
+    "good bye",
+    "goodnight",
+    "good night",
+    "see ya",
+    "see you",
+    "talk later",
+    "exit",
+    "quit",
+    "done"
   ],
   "answers": [
     "see you soon!",
     "Till next time",
     "bye bye",
     "have a great day"
+  ],
+  "exactInputs": [
+    "bye",
+    "goodbye",
+    "good bye",
+    "goodnight",
+    "good night",
+    "see ya",
+    "see you",
+    "see you later",
+    "talk later",
+    "exit",
+    "quit",
+    "done"
   ]
 }

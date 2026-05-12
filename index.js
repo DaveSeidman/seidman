@@ -24,6 +24,7 @@ class App {
     this.promptToOpen = this.promptToOpen.bind(this);
     this.ask = this.ask.bind(this);
     this.handleNameAnswer = this.handleNameAnswer.bind(this);
+    this.handleUserAnswer = this.handleUserAnswer.bind(this);
 
     this.manager = new NlpManager({ languages: ['en'] });
     this.manager.load(path.join(__dirname, 'modules/nlp/model.nlp'));
@@ -62,6 +63,7 @@ class App {
 
     fs.readdir(path.join(__dirname, 'modules/nlp/intents'), (err, files) => {
       this.answerBank = this.loadAnswerBank(files);
+      this.controlInputs = this.loadControlInputs(files);
       this.projectList = files.filter(file => file.split('.')[0] === 'projects').map(file => file.split('.')[1].replace('-', ' '));
       // this.intro();
       this.start();
@@ -80,6 +82,28 @@ class App {
 
       return answersByIntent;
     }, {});
+  }
+
+  loadControlInputs(files) {
+    return files.reduce((inputsByIntent, file) => {
+      const intent = file.replace('.json', '');
+      const intentPath = path.join(__dirname, 'modules/nlp/intents', file);
+      const data = JSON.parse(fs.readFileSync(intentPath, 'utf8'));
+
+      if (data.exactInputs && data.exactInputs.length) {
+        inputsByIntent[intent] = new Set(data.exactInputs.map(input => this.normalizeInput(input)));
+      }
+
+      return inputsByIntent;
+    }, {});
+  }
+
+  normalizeInput(input) {
+    return input.trim().toLowerCase().replace(/[^\w\s']/g, '').replace(/\s+/g, ' ');
+  }
+
+  hasControlInput(intent, normalized) {
+    return this.controlInputs && this.controlInputs[intent] && this.controlInputs[intent].has(normalized);
   }
 
   start() {
@@ -110,9 +134,23 @@ class App {
 
   startChat() {
     const startSentence = 'Ask me anything about Dave';
-    this.ask(startSentence, (answer) => {
-      this.manager.process('en', answer, this.context).then(this.continueChat);
-    });
+    this.ask(startSentence, this.handleUserAnswer);
+  }
+
+  handleUserAnswer(answer) {
+    const normalized = this.normalizeInput(answer);
+
+    if (this.hasControlInput('action.endChat', normalized)) {
+      this.endChat();
+      return;
+    }
+
+    if (this.hasControlInput('action.noop', normalized)) {
+      this.noop();
+      return;
+    }
+
+    this.manager.process('en', answer, this.context).then(this.continueChat);
   }
 
   continueChat(res) {
@@ -144,7 +182,7 @@ class App {
             return;
           }
 
-          this.manager.process('en', userAnswer, this.context).then(this.continueChat);
+          this.handleUserAnswer(userAnswer);
         });
         return;
       } else {
@@ -157,17 +195,21 @@ class App {
     }
 
     this.ask(message, (answer) => {
-      this.manager.process('en', answer, this.context).then(this.continueChat);
+      this.handleUserAnswer(answer);
     });
   }
 
-  endChat() {
-    console.log('Goodbye for now. To talk to this bot again, just type `npx whoisdave`.');
+  endChat(message = 'Goodbye for now. To talk to this bot again, just type `npx whoisdave`.') {
+    console.log(message);
     this.rl.close();
   }
 
   reset() {
     this.intro();
+  }
+
+  noop() {
+    this.endChat(this.getAnswerForIntent('action.noop', 'No problem. To talk later, just type `npx whoisdave`.'));
   }
 
   time() {
@@ -179,7 +221,7 @@ class App {
     }).format(new Date());
 
     this.ask(`The current time in Dave's timezone is ${time}. `, (answer) => {
-      this.manager.process('en', answer, this.context).then(this.continueChat);
+      this.handleUserAnswer(answer);
     });
   }
 
@@ -350,8 +392,9 @@ class App {
   ask(message, callback) {
     process.stdout.write(fontBot);
     this.typewriter.typeSentence(message).then(() => {
+      if (this.rl.closed) return;
       process.stdout.write(`\n${fontUser}> `);
-      this.rl.resume();
+      if (!this.rl.closed) this.rl.resume();
       this.rl.once('line', (answer) => {
         process.stdout.write(fontDefault);
         callback(answer);

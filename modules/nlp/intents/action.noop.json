@@ -1,0 +1,29 @@
+{
+  "questions": [
+    "nothing",
+    "nope",
+    "nah",
+    "not now",
+    "no thanks",
+    "nothing else",
+    "thats all",
+    "that's all",
+    "all set"
+  ],
+  "exactInputs": [
+    "",
+    "nothing",
+    "no",
+    "nope",
+    "nah",
+    "not now",
+    "no thanks",
+    "nothing else",
+    "thats all",
+    "that's all",
+    "all set"
+  ],
+  "answers": [
+    "No problem. To talk later, just type `npx whoisdave`."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "whoisdave",
-  "version": "0.4.2",
+  "version": "0.1.0",
   "description": "a command-line chatbot about Dave Seidman",
   "main": "index.js",
   "bin": {
