@@ -12,7 +12,7 @@
     "what are his children named?"
   ],
   "answers": [
-    "The dataset says Dave is married and has three kids, but it does not include details about his wife or kids. That is probably the right boundary for this bot.",
-    "This bot knows Dave is married and has three kids, but it does not include names, ages, or details about them."
+    "The dataset says Dave is married and has three kids, but it does not include details about his wife or kids. That is probably the right boundary here.",
+    "I know Dave is married and has three kids, but I do not have names, ages, or details about them."
   ]
 }

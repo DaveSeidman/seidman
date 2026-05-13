@@ -172,9 +172,13 @@ class App {
     return projects.map((project) => {
       const aliases = [
         project.name,
+        project.title,
         project.value,
-        project.value.replace(/-/g, ' '),
-      ];
+        project.slug,
+        project.value && project.value.replace(/-/g, ' '),
+        project.slug && project.slug.replace(/-/g, ' '),
+        ...(project.aliases || []),
+      ].filter(Boolean);
       const normalizedName = this.normalizeInput(project.name);
       if (normalizedName.startsWith('the ')) aliases.push(normalizedName.replace(/^the /, ''));
 
@@ -224,9 +228,36 @@ class App {
   }
 
   openProject(project) {
+    this.showProjectInfo(project);
+  }
+
+  getProjectUrl(project) {
+    return `https://daveseidman.com/${project.slug || project.value}`;
+  }
+
+  formatProjectDetails(project) {
+    const title = project.title || project.desc;
+    const details = project.details || project.desc || '';
+    const tags = project.tags || project.type || [];
+    const tagLine = tags.length ? `\nTags: ${tags.join(', ')}` : '';
+
+    return `${project.name}: ${title}\n${details}${tagLine}`;
+  }
+
+  showProjectInfo(project) {
     this.state.awaitingProjectType = false;
     this.state.lastProjectResults = [project];
-    this.promptToOpen(project.name, `https://daveseidman.com/${project.value}`);
+    this.rememberOpenTarget(project.name, this.getProjectUrl(project));
+
+    const message = `${this.formatProjectDetails(project)}\n\nWant me to open it in your browser? (y/n) `;
+    this.ask(message, (answer) => {
+      if (this.isAffirmativeOpenAnswer(answer)) {
+        this.openUrl(this.getProjectUrl(project));
+        this.sayAndContinue(`Opening ${project.name}.`);
+      } else {
+        this.sayAndContinue('No problem. You can say "open it" if you change your mind.');
+      }
+    });
   }
 
   start() {
@@ -249,7 +280,7 @@ class App {
   intro() {
     console.clear();
     process.stdout.write(fontBot);
-    this.typewriter.typeSentence('Welcome to the command line version of Dave Seidman!\nYou can ask anything about Dave and this bot will do its best to answer').then(() => {
+    this.typewriter.typeSentence('Welcome to the command line version of Dave Seidman!\nYou can ask anything about Dave and I will do my best to answer').then(() => {
       process.stdout.write('\n\n');
       this.startChat();
     });
@@ -335,8 +366,13 @@ class App {
   }
 
   isOpenReferenceInput(normalized) {
-    return /^(?:open|show|launch|pull up|bring up|display)(?: it| that| this| that one| this one| the last one)?$/.test(normalized)
-      || /^(?:yes|yeah|yep|sure|ok|okay|fine|actually) (?:open|show|launch|pull up|bring up|display)(?: it| that| this| that one| this one| the last one)?$/.test(normalized);
+    const openVerb = '(?:open|show|launch|pull up|bring up|display)';
+    const openTarget = '(?:it|that|this|that one|this one|the last one)';
+    const optionalReference = `(?: ${openTarget})?`;
+
+    return new RegExp(`^${openVerb}${optionalReference}$`).test(normalized)
+      || new RegExp(`^(?:yes|yeah|yep|sure|ok|okay|fine|actually|please|go ahead) ${openVerb}${optionalReference}$`).test(normalized)
+      || new RegExp(`^(?:no |actually )?(?:you can|can you|could you|please|go ahead and|go ahead) ${openVerb}(?: ${openTarget})?$`).test(normalized);
   }
 
   rememberOpenTarget(label, url) {
@@ -363,11 +399,11 @@ class App {
     }
 
     if (this.state.lastProjectResults.length > 1) {
-      this.ask('Which one should this bot open? Reply with a number from the list. ', this.handleUserAnswer);
+      this.ask('Which one should I open? Reply with a number from the list. ', this.handleUserAnswer);
       return;
     }
 
-    this.sayAndContinue('This bot does not have anything queued up to open yet. Ask for a project, resume, or portfolio first.');
+    this.sayAndContinue('I do not have anything queued up to open yet. Ask for a project, resume, or portfolio first.');
   }
 
   continueChat(res) {
@@ -422,7 +458,7 @@ class App {
     });
   }
 
-  endChat(message = 'Goodbye for now. To talk to this bot again, just type `npx whoisdave`.') {
+  endChat(message = 'Goodbye for now. To talk again, just type `npx whoisdave`.') {
     console.log(message);
     this.rl.close();
   }
@@ -458,7 +494,7 @@ class App {
       "What else do you want to know?",
       "Ask me another question",
       "What else?",
-      "What else should this bot try to answer?",
+      "What else can I try to answer?",
       "Ask me something else",
       "What else would you like to know about Dave?",
       "What else can I help with?",
@@ -501,9 +537,9 @@ class App {
 
   getNamePrompt() {
     const prompts = [
-      'By the way, who does this bot have the pleasure of speaking with?',
-      'Sorry this bot forgot to ask sooner, but who are you?',
-      "This bot would love to address you by your name. What is it?",
+      'By the way, who do I have the pleasure of speaking with?',
+      'Sorry I forgot to ask sooner, but who are you?',
+      "I'd love to address you by your name. What is it?",
     ];
 
     return prompts[Math.floor(Math.random() * prompts.length)];
@@ -534,7 +570,7 @@ class App {
     }
 
     if (this.hasControlInput('action.noop', normalized)) {
-      this.sayAndContinue('No worries. This bot can keep calling you you.');
+      this.sayAndContinue('No worries. I can keep calling you you.');
       return;
     }
 
@@ -546,7 +582,7 @@ class App {
     const name = this.parseName(answer);
 
     if (!name) {
-      this.sayAndContinue('No worries. This bot can keep calling you you.');
+      this.sayAndContinue('No worries. I can keep calling you you.');
       return;
     }
 
@@ -628,7 +664,12 @@ class App {
   }
 
   isAffirmativeOpenAnswer(answer) {
-    return /^(y|yes|yeah|yep|sure|ok|okay|fine|please|do it|open it|open that|open this)$/i.test(answer.trim());
+    const normalized = this.normalizeInput(answer);
+    if (/^(n|no|nope|nah|not now|no thanks)$/.test(normalized)) return false;
+    if (/\b(dont|don't|do not|never|cancel|stop)\b/.test(normalized)) return false;
+
+    return /^(y|yes|yeah|yep|sure|ok|okay|fine|please|do it)\b/.test(normalized)
+      || this.isOpenReferenceInput(normalized);
   }
 
   showProjectTypes() {
@@ -651,8 +692,8 @@ class App {
     }
 
     if (filteredProjects.length === 1) {
-      this.typewriter.typeSentence(`Okay, there is ${this.formatProjectTypeWithArticle(type)} project this bot can show you. `).then(() => {
-        this.openProject(filteredProjects[0]);
+      this.typewriter.typeSentence(`Okay, there is ${this.formatProjectTypeWithArticle(type)} project I can show you. `).then(() => {
+        this.showProjectInfo(filteredProjects[0]);
       });
       return;
     }
@@ -660,7 +701,7 @@ class App {
     const projectList = filteredProjects
       .map((project, index) => `${index + 1}) ${project.name}: ${project.desc}`)
       .join('\n');
-    this.sayAndContinue(`Okay, here are some of Dave's ${this.formatProjectType(type)} projects:\n${projectList}`);
+    this.ask(`Okay, here are some of Dave's ${this.formatProjectType(type)} projects:\n${projectList}\n\nWhich one do you want to see? Reply with a number. `, this.handleUserAnswer);
   }
 
   contact() {

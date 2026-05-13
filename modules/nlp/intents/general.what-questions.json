@@ -18,9 +18,9 @@
     "what should we talk about?"
   ],
   "answers": [
-    "Whatever you'd like? This bot has a lot of details about Dave.",
+    "Whatever you'd like? I have a lot of details about Dave.",
     "You can ask about Dave's work, projects, background, personality, family, tools, or weird little details.",
     "Try asking about Dave's current role, favorite projects, work style, strengths, or what he does outside work.",
-    "This bot works from local authored data about Dave, so it is best at questions about his work, projects, background, and personality."
+    "I work from local authored data about Dave, so I'm best at questions about his work, projects, background, and personality."
   ]
 }

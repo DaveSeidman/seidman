@@ -8,8 +8,8 @@
     "tell a joke"
   ],
   "answers": [
-    "This bot is not really the joke department. Dave is probably funnier than this module.",
-    "This bot is keeping its comedy career in draft mode. Ask about Dave instead.",
+    "I'm not really the joke department. Dave is probably funnier than this module.",
+    "I'm keeping my comedy career in draft mode. Ask about Dave instead.",
     "The safest joke is probably that someone made an npm package instead of a resume.",
     "It can try, but the better move is asking about Dave."
   ]

@@ -2,75 +2,188 @@
   "projects": [
     {
       "name": "HoloChat",
-      "desc": "Realtime Holographic Chat Application",
+      "title": "Realtime Holographic Chat App",
+      "desc": "Realtime holographic chat app",
+      "details": "A browser-based holographic chat application that extrudes a user's face into a 3D mesh, supports pan/zoom/rotate controls, and can be viewed on a Looking Glass display. It uses MediaPipe face tracking and body segmentation with WebRTC to stream video and mesh data for two-way holographic calls.",
       "type": ["holograms", "frontend", "backend", "experiment"],
+      "tags": ["holography", "frontend", "backend", "experiment"],
+      "slug": "HoloChat",
       "value": "HoloChat"
     },
     {
       "name": "Living Distance",
-      "desc": "Self-propelled Robot Sent to Space",
+      "title": "Zero-G Robotic Guidance System",
+      "desc": "Zero-G robotic guidance system",
+      "details": "A guidance system for Xin Liu's small robot that flew aboard a Blue Origin rocket. Dave prototyped a vision-based positioning approach using OpenCV homography and Aruco markers mounted inside a brightly lit locker so the robot could estimate its relative position and orientation in zero gravity.",
       "type": ["computer-vision", "physical-computing"],
+      "tags": ["computer vision", "physical computing"],
+      "slug": "LivingDistance",
       "value": "LivingDistance"
     },
     {
+      "name": "Spotify Codes",
+      "title": "AR Code Customizer",
+      "desc": "Spotify code generator and customizer",
+      "details": "An explainer and customization website for Spotify Codes. Users could select music, customize the size, color, and export format of a Spotify Code, and share or print it for stickers, banners, and other real-world placements.",
+      "type": ["frontend", "apps"],
+      "tags": ["frontend", "opencv", "api integration"],
+      "slug": "SpotifyCodes",
+      "value": "SpotifyCodes"
+    },
+    {
       "name": "Pride Parade",
-      "desc": "Interactive Face Tracking App",
+      "title": "Interactive Face Tracking App",
+      "desc": "Interactive face tracking app",
+      "details": "A Pride Month mobile and desktop experience for B-Reel that streamed a user's face into a customizable 3D parade float. The app tracked facial movement in real time, composited the user's face onto a float, unlocked easter eggs with facial gestures, and let users record and share their place in the virtual parade.",
       "type": ["frontend", "computer-vision"],
+      "tags": ["computer vision", "frontend"],
+      "slug": "Pride-Parade",
       "value": "Pride-Parade"
     },
     {
+      "name": "Maiz.Uno",
+      "title": "WebGL Corn Maze",
+      "desc": "WebGL corn maze",
+      "details": "A React and React-Three-Fiber maze game wrapped around a corn cob. Dave adapted maze-generation algorithms into a cylindrical board, used instanced geometry for performance, and built custom controls so players could move through pathways that continue around the cob.",
+      "type": ["frontend", "experiment"],
+      "tags": ["webgl", "algorithm design"],
+      "slug": "Maiz",
+      "value": "Maiz",
+      "aliases": ["Maiz", "Maíz Uno", "Maiz Uno"]
+    },
+    {
+      "name": "Save Tab",
+      "title": "Save Tab Soda!",
+      "desc": "Realtime WebGL soda-can petition",
+      "details": "A WebGL and websocket site supporting the campaign to save Tab soda. Visitors could sign a virtual can, submit why they wanted the soda saved, and see their can added in real time alongside cans from other connected users.",
+      "type": ["frontend", "backend", "apps"],
+      "tags": ["webgl", "websockets", "frontend", "backend", "database"],
+      "slug": "SaveTab",
+      "value": "SaveTab"
+    },
+    {
+      "name": "Parker",
+      "title": "Interactive Parking Configurator",
+      "desc": "Interactive parking configurator",
+      "details": "A WebGL visualization for exploring how different parking rules could affect street capacity in New York City. Users can adjust borough, spacing, parking direction, and side-of-street options while the scene updates using Three.js instanced geometry.",
+      "type": ["frontend", "experiment"],
+      "tags": ["webgl", "algorithm design"],
+      "slug": "Parker",
+      "value": "Parker"
+    },
+    {
       "name": "Cam Repeater",
-      "desc": "Digital Periscopes",
+      "title": "Digital Periscopes",
+      "desc": "Digital periscopes",
+      "details": "A tablet-based camera relay experiment where each screen shows AR markers and the next tablet detects those markers to stretch the previous image into its own display. In a line it behaves like a periscope; in a loop it can trap delayed light feedback for strange visual effects.",
       "type": ["computer-vision", "experiment"],
+      "tags": ["computer vision", "experiment"],
+      "slug": "Cam-Repeater",
       "value": "Cam-Repeater"
     },
     {
       "name": "Fakebook",
-      "desc": "Simulated Chat Application",
-      "type": ["apps"],
+      "title": "Simulated Chat Application",
+      "desc": "Simulated chat application",
+      "details": "A reusable single-page app and database for filming scripted text-message conversations. Actors could press keys naturally while the correct scripted message appeared every time, with support for message history, delays, typing timing, and controlled replies during production.",
+      "type": ["apps", "frontend", "backend"],
+      "tags": ["app", "frontend", "backend"],
+      "slug": "Fakebook",
       "value": "Fakebook"
     },
     {
       "name": "Stranger Tees",
-      "desc": "Interactive Tee Shirt",
+      "title": "Interactive Tee Shirt",
+      "desc": "Interactive tee shirt",
+      "details": "A Halloween wearable inspired by the Stranger Things Christmas-light wall. Dave wired LEDs for every letter to a Raspberry Pi Zero, then built a small server and frontend so messages could be typed or tapped over WiFi and played back directly on the shirt.",
       "type": ["experiment", "physical-computing", "backend"],
+      "tags": ["experiment", "physical computing", "backend"],
+      "slug": "StrangerTees",
       "value": "StrangerTees"
     },
     {
       "name": "NFL AR by Verizon",
-      "desc": "NFL AR Experience by Verizon",
-      "type": ["augmented-reality","computer-vision", "live-events"],
+      "title": "NFL AR Experience by Verizon",
+      "desc": "NFL AR experience by Verizon",
+      "details": "A stadium-scale AR activation for Verizon and the NFL's 100th season. Fans sat on blank life-size thrones that came alive through a mixed reality app with textures, animation, and particle effects. The team used Vuforia 3D model targets and body segmentation so graphics aligned to the throne without rendering over the person sitting in it.",
+      "type": ["augmented-reality", "computer-vision", "live-events"],
+      "tags": ["unity", "augmented reality", "computer vision", "live events"],
+      "slug": "NFL-AR",
       "value": "NFL-AR"
     },
     {
       "name": "ReFurbished",
-      "desc": "Remote Controlled Furby",
-      "type": ["physical-computing"],
-      "value": "Furby"
+      "title": "Remote Controlled Furby",
+      "desc": "Remote controlled Furby",
+      "details": "A re-engineered 1998 Furby for an AfterPay holiday shopping campaign. Dave dissected the toy, added a Teensy microcontroller, audio amplifier, motor driver, IR receiver, rechargeable battery, and custom MP3 playback so the doll could perform as a fortune-telling gift guide.",
+      "type": ["physical-computing", "backend"],
+      "tags": ["physical computing", "backend"],
+      "slug": "Furby",
+      "value": "Furby",
+      "aliases": ["Furby"]
+    },
+    {
+      "name": "BorderlessVR",
+      "title": "Virtual Reality, Delivered",
+      "desc": "VR publishing and conversion platform",
+      "details": "A platform for non-technical users to publish and view VR content. Dave led a team building a React, Node, and Unity system for uploading flat, panoramic, and stereoscopic media and viewing it in headsets through browser-based tooling.",
+      "type": ["virtual-reality", "frontend", "backend"],
+      "tags": ["frontend", "backend", "database", "aws"],
+      "slug": "Borderless",
+      "value": "Borderless",
+      "aliases": ["Borderless"]
     },
     {
       "name": "Wedding Website",
-      "desc": "DeepZoom Viewer Integration",
+      "title": "DeepZoom Viewer Integration",
+      "desc": "DeepZoom viewer integration",
+      "details": "A wedding website built as a large navigable canvas of event pages, gallery content, directions, hotel information, and guestbook features. Dave stitched the design into a massive Photoshop document and used Seadragon/DeepZoom to create free-form pan and zoom navigation that still worked for guests on mobile and desktop.",
       "type": ["frontend"],
+      "tags": ["frontend"],
+      "slug": "Wedding",
       "value": "Wedding"
     },
     {
-      "name": "CatDive",
-      "desc": "It's cats all the way down.",
+      "name": "InfiniteCat",
+      "title": "It's cats all the way down",
+      "desc": "Computer-vision infinite image dive",
+      "details": "A computer-vision prototype based on the long-running Infinite Cat website. Dave scraped and sorted years of photos, used OpenCV to detect the next image inside each monitor, computed homography matrices, and animated the chain with CSS Matrix4 transforms for an endless dive through nested images.",
       "type": ["frontend", "computer-vision"],
-      "value": "CatDive"
+      "tags": ["frontend", "computer vision"],
+      "slug": "InfiniteCat",
+      "value": "InfiniteCat",
+      "aliases": ["CatDive", "Infinite Cat"]
     },
     {
       "name": "VR Coding",
-      "desc": "Immersive Realtime Coding Environemnt",
+      "title": "Immersive Realtime Coding Environment",
+      "desc": "Immersive realtime coding environment",
+      "details": "A mixed reality development workflow that placed a virtual monitor and accurate keyboard reference inside the VR scene Dave was building. With hot module reloading, he could edit and inspect the project from inside the headset without restarting the XR session.",
       "type": ["augmented-reality", "virtual-reality", "experiment"],
+      "tags": ["webgl", "websockets", "virtual reality", "mixed reality"],
+      "slug": "VR-Coding",
       "value": "VR-Coding"
     },
     {
       "name": "The Claw",
-      "desc": "Internet controllable Arcade Claw Machine",
+      "title": "Internet Controllable Claw Machine",
+      "desc": "Internet controllable arcade claw machine",
+      "details": "A real six-foot arcade claw machine rewired and put online as a recruiting experience for B-Reel. Job seekers could line up and play remotely from desktop or mobile browsers, controlling Raspberry Pis connected to the machine's motors and sensors. More than 5,000 visitors played, over 200 won interviews, and the project won an FWA.",
       "type": ["physical-computing", "live-events", "frontend", "backend"],
+      "tags": ["physical computing", "live events", "frontend", "backend", "3d printing", "opencv"],
+      "slug": "The-Claw",
       "value": "The-Claw"
+    },
+    {
+      "name": "Amex DLS",
+      "title": "Design Language System",
+      "desc": "American Express design language system",
+      "details": "A large design language system for American Express digital properties. Dave worked with B-Reel on a frontend system intended to harmonize UI, styles, widgets, and interaction patterns across a large ecosystem used by many development teams.",
+      "type": ["frontend"],
+      "tags": ["frontend"],
+      "slug": "Amex-DLS",
+      "value": "Amex-DLS",
+      "aliases": ["American Express DLS", "Design Language System"]
     }
   ]
 }

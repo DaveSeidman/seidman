@@ -16,7 +16,7 @@
     "is he expensive?"
   ],
   "answers": [
-    "This bot does not have Dave's compensation details, and it should not make them up.",
+    "I do not have Dave's compensation details, and I should not make them up.",
     "There is no salary or rate information in the dataset. For that, Dave should answer directly.",
     "Compensation is not in this local data. The honest answer is: ask Dave directly."
   ]

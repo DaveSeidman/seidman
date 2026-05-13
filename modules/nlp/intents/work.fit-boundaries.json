@@ -15,7 +15,7 @@
   ],
   "answers": [
     "The dataset does not define Dave's dislikes, remote-work preferences, or meeting preferences yet. It does say he works best on small teams or solo, especially on impossible-looking projects.",
-    "This bot should not guess about corporate, startup, remote, or meeting preferences. The documented fit is small teams or solo, with hard interactive work that needs fast prototyping.",
+    "I should not guess about corporate, startup, remote, or meeting preferences. The documented fit is small teams or solo, with hard interactive work that needs fast prototyping.",
     "Known fit: small teams, solo ownership, rapid prototyping, and magical-feeling interactive work. Unknown: whether Dave prefers corporate, startup, remote, or meeting-heavy environments."
   ]
 }

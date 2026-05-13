@@ -6,8 +6,8 @@
     "Who am I talking to?"
   ],
   "answers": [
-    "This is a command-line bot about Dave Seidman.",
-    "This bot knows about Dave Seidman.",
-    "You are talking to Dave Seidman's command-line bot."
+    "I'm a command-line interface about Dave Seidman.",
+    "I know about Dave Seidman.",
+    "You are talking to Dave Seidman's command-line interface."
   ]
 }

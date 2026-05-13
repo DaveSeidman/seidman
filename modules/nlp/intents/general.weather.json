@@ -10,8 +10,8 @@
     "is it cold where Dave is?"
   ],
   "answers": [
-    "This bot does not check live weather yet, so it should not guess. Dave is based in Brooklyn, though.",
+    "I do not check live weather yet, so I should not guess. Dave is based in Brooklyn, though.",
     "It cannot check live weather yet. It only knows that Dave is based in Brooklyn.",
-    "No live weather data is wired in yet, so this bot should not make up a forecast."
+    "No live weather data is wired in yet, so I should not make up a forecast."
   ]
 }

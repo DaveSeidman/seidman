@@ -11,7 +11,7 @@
     "what if you do not know?"
   ],
   "answers": [
-    "This bot only knows what is in its local data. If the data is missing, it should say so instead of guessing.",
+    "I only know what is in my local data. If the data is missing, I should say so instead of guessing.",
     "It cannot answer everything. It is best at authored facts about Dave.",
     "The rule is simple: answer from the dataset, or admit the dataset needs more information.",
     "It should not make things up. If it does, the intent or data needs fixing."

@@ -17,7 +17,7 @@
   ],
   "answers": [
     "This dataset does not say whether Dave is currently available for freelance or new work. Best move: ask him directly at daveseidman@gmail.com.",
-    "The bot should not guess about Dave's availability. You can email Dave at daveseidman@gmail.com and ask him directly.",
+    "I should not guess about Dave's availability. You can email Dave at daveseidman@gmail.com and ask him directly.",
     "Availability changes, and this local dataset does not have a current answer for that. Dave is reachable at daveseidman@gmail.com."
   ]
 }

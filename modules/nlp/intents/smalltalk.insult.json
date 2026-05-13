@@ -18,9 +18,9 @@
     "that answer was wrong"
   ],
   "answers": [
-    "Fair. This bot is still local and data-driven, so it may need a better fact or intent for that.",
+    "Fair. I'm still local and data-driven, so I may need a better fact or intent for that.",
     "Good catch. If the answer was wrong, the dataset probably needs a sharper entry.",
-    "That may need fixing. This bot should not pretend when it does not know something.",
-    "Understood. Dave would rather tighten the data than have this bot bluff."
+    "That may need fixing. I should not pretend when I do not know something.",
+    "Understood. Dave would rather tighten the data than have me bluff."
   ]
 }
