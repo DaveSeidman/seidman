@@ -1,0 +1,24 @@
+{
+  "questions": [
+    "background",
+    "Dave's background",
+    "his background",
+    "your background",
+    "what's Dave's background?",
+    "what is Dave's background?",
+    "what's his background?",
+    "what is his background?",
+    "what's your background?",
+    "what is your background?",
+    "tell me about Dave's background",
+    "tell me about his background",
+    "tell me about your background",
+    "give me Dave's background",
+    "give me his background"
+  ],
+  "answers": [
+    "Dave grew up in New York in a house shaped by both technology and art. His dad taught math and computer science, his mom came from anthropology, teaching, and museum work, and Dave later studied Computer Science at Drew University with a minor in Art.",
+    "Dave's background is a mix of technical and creative influences: he grew up in New York around early home computers, Nintendo, calculators running BASIC, and a museum-curator/art influence from his mom. He went on to study Computer Science at Drew University and minor in Art.",
+    "Dave came up around both computers and culture. He grew up in New York with a math-and-computer-science teacher dad, an arts-and-museums mom, early computers in the house, and BASIC as his first programming language. He later got a Computer Science degree from Drew University with an Art minor."
+  ]
+}

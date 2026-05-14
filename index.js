@@ -319,6 +319,21 @@ class App {
       return;
     }
 
+    if (/\bbackground\b/.test(normalized)) {
+      if (/\b(education|school|college|university|degree|study|studied|academic)\b/.test(normalized)) {
+        this.sayAndContinue(this.getAnswerForIntent('personal.education', 'Dave got his degree in Computer Science from Drew University, with a minor in Art.'));
+        return;
+      }
+
+      if (/\b(art|arts|museum|museums|curator|creative)\b/.test(normalized)) {
+        this.sayAndContinue(this.getAnswerForIntent('personal.museums-art', 'Dave is not only technical. He has an Art minor, grew up with a museum-curator influence, and now works on museum installations.'));
+        return;
+      }
+
+      this.sayAndContinue(this.getAnswerForIntent('personal.background', 'Dave grew up in New York in a house shaped by both technology and art. His dad taught math and computer science, and his mom came from anthropology, teaching, and museum work.'));
+      return;
+    }
+
     if (/\b(museum|museums|installation|installations)\b/.test(normalized) && /\b(proud|projects|worked on|work)\b/.test(normalized)) {
       this.sayAndContinue(this.getAnswerForIntent('work.proud-projects', 'Some museum installation projects Dave is proud of include The Waterways of Change in Buffalo, The Shockoe Institute in Virginia, and the National Urban League in Harlem.'));
       return;
